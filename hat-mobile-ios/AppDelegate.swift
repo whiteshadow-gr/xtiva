@@ -50,7 +50,7 @@ internal class AppDelegate: UIResponder, UIApplicationDelegate {
         let notificationSettings = UIUserNotificationSettings(types: [.alert, .sound], categories: nil)
         UIApplication.shared.registerUserNotificationSettings(notificationSettings)
         
-        self.window?.tintColor = .appBase
+        self.window?.tintColor = .teal
         
         UINavigationBar.appearance().isOpaque = true
         UINavigationBar.appearance().barTintColor = .teal

@@ -193,7 +193,7 @@ internal class LoginViewController: UIViewController, UITextFieldDelegate {
 
         // button
         self.buttonLogon.setTitle(NSLocalizedString("logon_label", comment:  "username"), for: UIControlState())
-        self.buttonLogon.backgroundColor = .appBase
+        self.buttonLogon.backgroundColor = .teal
         
         // app version
         if let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String {

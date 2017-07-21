@@ -102,7 +102,7 @@ internal class DataPlugsCollectionViewController: UICollectionViewController, UI
             })(appToken)
         }
         
-        HATService.getApplicationTokenFor(serviceName: "Facebbok", userDomain: self.userDomain, token: self.userToken, resource: "https://social-plug.hubofallthings.com", succesfulCallBack: appTokenReceived, failCallBack: {error in
+        HATService.getApplicationTokenFor(serviceName: "Facebook", userDomain: self.userDomain, token: self.userToken, resource: "https://social-plug.hubofallthings.com", succesfulCallBack: appTokenReceived, failCallBack: {error in
             
             _ = CrashLoggerHelper.JSONParsingErrorLog(error: error)
         })

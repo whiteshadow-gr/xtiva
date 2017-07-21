@@ -19,17 +19,16 @@ extension UIColor {
     // MARK: - Staticly defined colors
     
     // swiftlint:disable object_literal
-    static let appBase: UIColor = UIColor.fromRGB(0x018675)
     static let toolbarColor: UIColor = UIColor(red: 76 / 255, green: 217 / 255, blue: 100 / 255, alpha: 1)
-    static let teal: UIColor = UIColor(red: 0 / 255, green: 150 / 255, blue: 136 / 255, alpha: 1)
-    static let tealDark: UIColor = UIColor(red: 2 / 255, green: 107 / 255, blue: 97 / 255, alpha: 1)
-    static let tealLight: UIColor = UIColor(red: 21 / 255, green: 130 / 255, blue: 120 / 255, alpha: 1)
-    static let rumpelLightGray: UIColor = UIColor(red: 51 / 255, green: 74 / 255, blue: 79 / 255, alpha: 1)
-    static let rumpelDarkGray: UIColor = UIColor(red: 29 / 255, green: 49 / 255, blue: 53 / 255, alpha: 1)
-    static let rumpelLighterDarkGray: UIColor = UIColor(red: 39 / 255, green: 72 / 255, blue: 80 / 255, alpha: 1)
+    static let teal: UIColor = UIColor(red: 0 / 255, green: 156 / 255, blue: 216 / 255, alpha: 1)
+    static let tealDark: UIColor = UIColor(red: 0 / 255, green: 130 / 255, blue: 200 / 255, alpha: 1)
+    static let tealLight: UIColor = UIColor(red: 35 / 255, green: 190 / 255, blue: 241 / 255, alpha: 1)
+    static let rumpelLightGray: UIColor = UIColor(red: 100 / 255, green: 100 / 255, blue: 105 / 255, alpha: 1)
+    static let rumpelDarkGray: UIColor = UIColor(red: 88 / 255, green: 88 / 255, blue: 90 / 255, alpha: 1)
+    static let rumpelLighterDarkGray: UIColor = UIColor(red: 110 / 255, green: 110 / 255, blue: 117 / 255, alpha: 1)
     static let rumpelVeryLightGray: UIColor = UIColor(red: 244 / 255, green: 244 / 255, blue: 244 / 255, alpha: 1)
     
-    static let onSwitchTintColor: UIColor = UIColor(red: 144 / 255, green: 202 / 255, blue: 119 / 255, alpha: 1)
+    static let onSwitchTintColor: UIColor = UIColor(red: 0 / 255, green: 156 / 255, blue: 216 / 255, alpha: 1)
     // swiftlint:enable object_literal
     
     // MARK: - Methods

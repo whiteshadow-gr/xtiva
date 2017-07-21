@@ -2,15 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "XTIVA-BG.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "XTIVA-BG@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "landing_bg.jpg",
+      "filename" : "XTIVA-BG@3x.png",
       "scale" : "3x"
     }
   ],

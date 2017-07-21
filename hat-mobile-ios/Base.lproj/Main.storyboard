@@ -30,7 +30,7 @@
         <!--Login-->
         <scene sceneID="ZJX-os-OGv">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" extendedLayoutIncludesOpaqueBars="YES" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Vvb-vK-6GZ" customClass="LoginViewController" customModule="hat_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" extendedLayoutIncludesOpaqueBars="YES" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Vvb-vK-6GZ" customClass="LoginViewController" customModule="xtiva" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y4i-Sb-UOA"/>
                         <viewControllerLayoutGuide type="bottom" id="YqD-Hw-r6C"/>
@@ -60,7 +60,7 @@
                                             <action selector="buttonLogonTouchUp:" destination="Vvb-vK-6GZ" eventType="touchUpInside" id="XSO-Pq-6OA"/>
                                         </connections>
                                     </button>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="A demonstrator app for your HAT" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7D-5t-hVO">
+                                    <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="A demonstrator app for your HAT" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7D-5t-hVO">
                                         <rect key="frame" x="39" y="189" width="239" height="29"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -70,7 +70,7 @@
                                         <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Rumpel Lite" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H7l-2x-eCW">
+                                    <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Rumpel Lite" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H7l-2x-eCW">
                                         <rect key="frame" x="40" y="142" width="239" height="68"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -120,7 +120,7 @@
                                             <segue destination="K1Y-nh-x1V" kind="show" identifier="learnMoreSegue" id="Gqh-nC-jR8"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qti-fk-0TI">
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qti-fk-0TI">
                                         <rect key="frame" x="45" y="333" width="230" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="jpO-8G-LAG"/>
@@ -196,9 +196,37 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JEE-oz-Ck8">
+                                <rect key="frame" x="60" y="473" width="201" height="30"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rumpel Logo" translatesAutoresizingMaskIntoConstraints="NO" id="OuZ-UM-Os1">
+                                        <rect key="frame" x="176" y="3" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="Cja-IQ-uiy"/>
+                                            <constraint firstAttribute="width" constant="25" id="kTJ-Ah-vmj"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powered by Rumpel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xg9-La-pyg">
+                                        <rect key="frame" x="10" y="5" width="139.5" height="21"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="201" id="CuW-Dc-e98"/>
+                                    <constraint firstItem="OuZ-UM-Os1" firstAttribute="top" secondItem="JEE-oz-Ck8" secondAttribute="top" constant="3" id="N3W-mw-J0L"/>
+                                    <constraint firstAttribute="trailing" secondItem="OuZ-UM-Os1" secondAttribute="trailing" id="TrL-uo-kQN"/>
+                                    <constraint firstAttribute="height" constant="30" id="aDz-eJ-WwP"/>
+                                    <constraint firstItem="Xg9-La-pyg" firstAttribute="leading" secondItem="JEE-oz-Ck8" secondAttribute="leading" constant="10" id="mmi-KC-kPh"/>
+                                    <constraint firstItem="Xg9-La-pyg" firstAttribute="top" secondItem="JEE-oz-Ck8" secondAttribute="top" constant="5" id="wTF-o8-tpI"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="JEE-oz-Ck8" firstAttribute="top" secondItem="c60-du-bsT" secondAttribute="bottom" constant="1" id="2TW-9v-pmT"/>
                             <constraint firstItem="hEh-Dj-wSC" firstAttribute="leading" secondItem="H5b-Q7-jlj" secondAttribute="leading" id="6oG-R0-Opx"/>
                             <constraint firstItem="c60-du-bsT" firstAttribute="trailing" secondItem="hEh-Dj-wSC" secondAttribute="trailing" id="Q5L-h9-DBW"/>
                             <constraint firstItem="hEh-Dj-wSC" firstAttribute="bottom" secondItem="c60-du-bsT" secondAttribute="bottom" constant="32" id="Syp-Gm-NlA"/>
@@ -211,6 +239,7 @@
                             <constraint firstAttribute="bottom" secondItem="hEh-Dj-wSC" secondAttribute="bottom" id="iUo-J8-GNt"/>
                             <constraint firstAttribute="bottomMargin" secondItem="2KF-DV-8Fz" secondAttribute="bottom" constant="8" id="rna-rL-9GP"/>
                             <constraint firstAttribute="trailingMargin" secondItem="2KF-DV-8Fz" secondAttribute="trailing" constant="-6" id="sgx-Md-kdN"/>
+                            <constraint firstItem="JEE-oz-Ck8" firstAttribute="leading" secondItem="m1N-SX-weh" secondAttribute="trailing" constant="27" id="tAs-aC-tVZ"/>
                             <constraint firstItem="c60-du-bsT" firstAttribute="leading" secondItem="hEh-Dj-wSC" secondAttribute="leading" id="uaf-7D-9eY"/>
                         </constraints>
                     </view>
@@ -235,7 +264,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rqr-dh-JE4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="743" y="-8326"/>
+            <point key="canvasLocation" x="742.5" y="-8326.0563380281692"/>
         </scene>
         <!--Data Services-->
         <scene sceneID="JM1-ed-8xS">
@@ -261,7 +290,7 @@
         <!--Data Services-->
         <scene sceneID="zaW-uK-1jb">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="2Rp-ZF-e2I" customClass="HomeViewController" customModule="hat_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="2Rp-ZF-e2I" customClass="HomeViewController" customModule="xtiva" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lbA-wG-VSh"/>
                         <viewControllerLayoutGuide type="bottom" id="GcH-7g-A72"/>
@@ -274,7 +303,7 @@
                                 <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0f5-1X-Id6">
-                                <rect key="frame" x="0.0" y="183" width="320" height="336"/>
+                                <rect key="frame" x="0.0" y="182" width="320" height="337"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="3Ii-9X-n6n">
                                     <size key="itemSize" width="160" height="160"/>
@@ -283,7 +312,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="homeScreenCell" id="EXJ-00-qOt" customClass="HomeCollectionViewCell" customModule="hat_mobile_ios" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="homeScreenCell" id="EXJ-00-qOt" customClass="HomeCollectionViewCell" customModule="xtiva" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="32" width="160" height="160"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -310,7 +339,7 @@
                                                 </imageView>
                                             </subviews>
                                         </view>
-                                        <color key="backgroundColor" red="0.0" green="0.58628696199999997" blue="0.53447610140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.0" green="0.61163347960000003" blue="0.84882885220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="1sM-yB-tBy" firstAttribute="centerX" secondItem="dEq-0x-D1E" secondAttribute="centerX" id="G5j-2e-lou"/>
                                             <constraint firstItem="1sM-yB-tBy" firstAttribute="leading" secondItem="EXJ-00-qOt" secondAttribute="leadingMargin" constant="50" id="KeO-Cl-5Ko"/>
@@ -329,7 +358,7 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
-                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="homeHeader" id="jbf-ND-a7Q" customClass="HomeHeaderCollectionReusableView" customModule="hat_mobile_ios" customModuleProvider="target">
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="homeHeader" id="jbf-ND-a7Q" customClass="HomeHeaderCollectionReusableView" customModule="xtiva" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="32"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -370,13 +399,13 @@
                                 </connections>
                             </collectionView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rumpel" translatesAutoresizingMaskIntoConstraints="NO" id="z4C-rm-ypE">
-                                <rect key="frame" x="16" y="88" width="75" height="76"/>
+                                <rect key="frame" x="16" y="88" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="YIB-dw-dUI"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X84-1q-WTC" customClass="RingProgressCircle" customModule="hat_mobile_ios" customModuleProvider="target">
-                                <rect key="frame" x="16" y="98" width="75" height="56"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X84-1q-WTC" customClass="RingProgressCircle" customModule="xtiva" customModuleProvider="target">
+                                <rect key="frame" x="16" y="98" width="75" height="55"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="ringRadius">
@@ -447,7 +476,7 @@
         <!--Parent Page View Controller-->
         <scene sceneID="JOe-0X-75u">
             <objects>
-                <pageViewController storyboardIdentifier="PageController" autoresizesArchivedViewToFullSize="NO" hidesBottomBarWhenPushed="YES" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="K1Y-nh-x1V" customClass="ParentPageViewController" customModule="hat_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <pageViewController storyboardIdentifier="PageController" autoresizesArchivedViewToFullSize="NO" hidesBottomBarWhenPushed="YES" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="K1Y-nh-x1V" customClass="ParentPageViewController" customModule="xtiva" customModuleProvider="target" sceneMemberID="viewController">
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                 </pageViewController>
@@ -458,7 +487,7 @@
         <!--Page View Controller-->
         <scene sceneID="9zh-2c-IWh">
             <objects>
-                <viewController storyboardIdentifier="ItemController" id="JMP-UG-881" customClass="PageViewController" customModule="hat_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ItemController" id="JMP-UG-881" customClass="PageViewController" customModule="xtiva" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Q3P-g5-ub8"/>
                         <viewControllerLayoutGuide type="bottom" id="99S-M9-NYc"/>
@@ -561,7 +590,7 @@
         <!--Info Hat Providers View Controller-->
         <scene sceneID="M71-us-Obg">
             <objects>
-                <viewController storyboardIdentifier="HATInfo" id="Pv9-j9-2TI" customClass="InfoHatProvidersViewController" customModule="hat_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HATInfo" id="Pv9-j9-2TI" customClass="InfoHatProvidersViewController" customModule="xtiva" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vkG-nL-q9g"/>
                         <viewControllerLayoutGuide type="bottom" id="MTX-WE-pDH"/>
@@ -611,7 +640,7 @@
         <!--Capabilities Page View Controller-->
         <scene sceneID="jFL-DA-G4Z">
             <objects>
-                <pageViewController storyboardIdentifier="CapabilitiesPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Id8-2f-a9Y" customClass="HATCapabilitiesPageViewController" customModule="hat_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <pageViewController storyboardIdentifier="CapabilitiesPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Id8-2f-a9Y" customClass="HATCapabilitiesPageViewController" customModule="xtiva" customModuleProvider="target" sceneMemberID="viewController">
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                 </pageViewController>
@@ -622,7 +651,7 @@
         <!--Capabilities View Controller-->
         <scene sceneID="Lck-5k-mv2">
             <objects>
-                <viewController storyboardIdentifier="CapabilitiesViewController" id="odT-vh-nZh" customClass="HATCapabilitiesViewController" customModule="hat_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CapabilitiesViewController" id="odT-vh-nZh" customClass="HATCapabilitiesViewController" customModule="xtiva" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cKj-pp-YOe"/>
                         <viewControllerLayoutGuide type="bottom" id="Xup-Ye-KeO"/>
@@ -712,7 +741,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.58628696199999997" blue="0.53447610140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.61163347960000003" blue="0.84882885220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="A3e-LF-T2j" firstAttribute="centerX" secondItem="ZNS-Za-GhH" secondAttribute="centerX" id="4Hd-ru-clv"/>
                             <constraint firstItem="Xup-Ye-KeO" firstAttribute="top" secondItem="A3e-LF-T2j" secondAttribute="bottom" id="Q3b-TM-nw3"/>
@@ -738,7 +767,7 @@
         <!--Complete Purchase View Controller-->
         <scene sceneID="esf-Ak-TL9">
             <objects>
-                <viewController id="aWE-iq-qje" customClass="CompletePurchaseViewController" customModule="hat_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="aWE-iq-qje" customClass="CompletePurchaseViewController" customModule="xtiva" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Abh-YO-8ZC"/>
                         <viewControllerLayoutGuide type="bottom" id="DgC-hn-pwS"/>
@@ -756,7 +785,7 @@
                                     <constraint firstAttribute="height" constant="30" id="ppt-Cg-MWt"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.58628696199999997" blue="0.53447610140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.0" green="0.61163347960000003" blue="0.84882885220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GWi-eh-Qw9">
@@ -785,7 +814,7 @@
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZt-1L-Fgq">
                                         <rect key="frame" x="20" y="243" width="288" height="30"/>
-                                        <color key="backgroundColor" red="0.14487174150000001" green="0.6410967112" blue="0.59759420159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.0" green="0.61163347960000003" blue="0.84882885220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="DSF-9G-tDP"/>
                                         </constraints>
@@ -848,17 +877,17 @@
         <!--Terms And Conditions View Controller-->
         <scene sceneID="vL1-vM-xJZ">
             <objects>
-                <viewController id="mGN-jg-bh9" customClass="TermsAndConditionsViewController" customModule="hat_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="mGN-jg-bh9" customClass="TermsAndConditionsViewController" customModule="xtiva" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BQv-vu-n4i"/>
                         <viewControllerLayoutGuide type="bottom" id="aLe-Q1-bh4"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6Lh-7Q-jCL">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KQf-Om-THk">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
                         </subviews>
@@ -883,7 +912,7 @@
         <!--First Onboarding Page View Controller-->
         <scene sceneID="Xgl-Xr-eTK">
             <objects>
-                <pageViewController storyboardIdentifier="firstTimeOnboarding" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="fLW-np-KMC" customClass="FirstOnboardingPageViewController" customModule="hat_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <pageViewController storyboardIdentifier="firstTimeOnboarding" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="fLW-np-KMC" customClass="FirstOnboardingPageViewController" customModule="xtiva" customModuleProvider="target" sceneMemberID="viewController">
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
@@ -895,7 +924,7 @@
         <!--First Onboarding View Controller-->
         <scene sceneID="NWi-Ek-uBm">
             <objects>
-                <viewController storyboardIdentifier="firstOnboardingViewController" id="NzE-gs-SLU" customClass="FirstOnboardingViewController" customModule="hat_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="firstOnboardingViewController" id="NzE-gs-SLU" customClass="FirstOnboardingViewController" customModule="xtiva" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zHy-vW-fnD"/>
                         <viewControllerLayoutGuide type="bottom" id="oel-G5-cvM"/>
@@ -933,12 +962,12 @@
                                         </constraints>
                                         <string key="text">PHATA is your personal HAT address (e.g. YourHATname.hubofallthings.net). It is similar to a PO Box or a nickname for your HAT server. \n\n It is what you use to sign in on to HAT-ready services on the internet. You can set up your PHATA page and it can then be your personal home page on the Internet. Customise what information you wish to share on your PHATA page here. </string>
                                         <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
-                                        <color key="textColor" red="0.0" green="0.58628696199999997" blue="0.53447610140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.0" green="0.61163347960000003" blue="0.84882885220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o14-3b-ert">
                                         <rect key="frame" x="30" y="457.5" width="260" height="30"/>
-                                        <color key="backgroundColor" red="0.0" green="0.58628696199999997" blue="0.53447610140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.0" green="0.61163347960000003" blue="0.84882885220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="Vy7-Jo-0zE"/>
                                         </constraints>
@@ -995,7 +1024,7 @@
         <!--Learn MorePHATA View Controller-->
         <scene sceneID="yyv-o9-tjf">
             <objects>
-                <viewController storyboardIdentifier="learnMorePHATA" id="8GQ-fP-xW2" customClass="LearnMorePHATAViewController" customModule="hat_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="learnMorePHATA" id="8GQ-fP-xW2" customClass="LearnMorePHATAViewController" customModule="xtiva" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TqS-ik-WBD"/>
                         <viewControllerLayoutGuide type="bottom" id="TYQ-kj-CFq"/>
@@ -1065,7 +1094,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.58628696199999997" blue="0.53447610140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.61163347960000003" blue="0.84882885220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="T8u-7A-40f" secondAttribute="trailing" id="2fP-tg-QMy"/>
                             <constraint firstItem="T8u-7A-40f" firstAttribute="bottom" secondItem="TYQ-kj-CFq" secondAttribute="top" id="LIV-0y-YwS"/>
@@ -1088,7 +1117,7 @@
         <!--Text Pop Up View Controller-->
         <scene sceneID="QaB-rg-2CN">
             <objects>
-                <viewController storyboardIdentifier="textPopUpViewController" id="MMX-hP-DIM" customClass="TextPopUpViewController" customModule="hat_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="textPopUpViewController" id="MMX-hP-DIM" customClass="TextPopUpViewController" customModule="xtiva" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="j6w-sN-w2X"/>
                         <viewControllerLayoutGuide type="bottom" id="cFX-Hl-WfC"/>
@@ -1111,7 +1140,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.58628696199999997" blue="0.53447610140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.61163347960000003" blue="0.84882885220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wZs-Os-L8c" firstAttribute="leading" secondItem="G01-In-UGX" secondAttribute="leadingMargin" constant="16" id="69a-9d-xmd"/>
                             <constraint firstAttribute="trailingMargin" secondItem="AFM-i5-4td" secondAttribute="trailing" constant="10" id="Arw-yD-3L7"/>
@@ -1149,7 +1178,7 @@
         <!--Location-->
         <scene sceneID="xFw-eM-6lT">
             <objects>
-                <viewController storyboardIdentifier="MapViewController" id="VSO-tC-6mG" userLabel="Location" customClass="MapViewController" customModule="hat_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MapViewController" id="VSO-tC-6mG" userLabel="Location" customClass="MapViewController" customModule="xtiva" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="A54-qd-Vik"/>
                         <viewControllerLayoutGuide type="bottom" id="5i8-hV-d5G"/>
@@ -1200,7 +1229,7 @@
                                         <rect key="frame" x="5" y="5" width="37" height="37"/>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.14487174153327942" green="0.64109671115875244" blue="0.59759420156478882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.61163347960000003" blue="0.84882885220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="39o-c9-x9W"/>
                                     <constraint firstItem="cvr-9e-g38" firstAttribute="top" secondItem="T51-b9-eT1" secondAttribute="top" constant="5" id="Bk6-yF-cE6"/>
@@ -1306,7 +1335,7 @@
         <!--Data Offers-->
         <scene sceneID="bQo-rd-FMy">
             <objects>
-                <viewController id="Zep-yl-2cH" customClass="DataOffersViewController" customModule="hat_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Zep-yl-2cH" customClass="DataOffersViewController" customModule="xtiva" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="00E-75-2hE"/>
                         <viewControllerLayoutGuide type="bottom" id="LqK-QM-cVQ"/>
@@ -1328,7 +1357,7 @@
                                             <inset key="sectionInset" minX="0.0" minY="20" maxX="0.0" maxY="20"/>
                                         </collectionViewFlowLayout>
                                         <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="offerCell" id="JmH-ww-NCt" customClass="DataOffersCollectionViewCell" customModule="hat_mobile_ios" customModuleProvider="target">
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="offerCell" id="JmH-ww-NCt" customClass="DataOffersCollectionViewCell" customModule="xtiva" customModuleProvider="target">
                                                 <rect key="frame" x="20" y="20" width="280" height="280"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -1353,7 +1382,7 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rZY-C6-Fwm" customClass="RingProgressCircle" customModule="hat_mobile_ios" customModuleProvider="target">
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rZY-C6-Fwm" customClass="RingProgressCircle" customModule="xtiva" customModuleProvider="target">
                                                             <rect key="frame" x="20" y="20" width="240" height="124"/>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                             <constraints>
@@ -1384,7 +1413,7 @@
                                                     <outlet property="titleLabel" destination="zpx-yG-Ccj" id="Fgs-f0-49Z"/>
                                                 </connections>
                                             </collectionViewCell>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="summaryOfferCell" id="aMz-el-i8z" customClass="DataOffersSummaryCollectionViewCell" customModule="hat_mobile_ios" customModuleProvider="target">
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="summaryOfferCell" id="aMz-el-i8z" customClass="DataOffersSummaryCollectionViewCell" customModule="xtiva" customModuleProvider="target">
                                                 <rect key="frame" x="20" y="340" width="280" height="280"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -1516,7 +1545,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Redeemed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7a2-12-VAj">
-                                                <rect key="frame" x="13" y="35" width="55.5" height="15"/>
+                                                <rect key="frame" x="12.5" y="35" width="55.5" height="15"/>
                                                 <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="11"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -1590,7 +1619,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.12659415199999999" green="0.56907582560000003" blue="0.53173319789999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.61163347960000003" blue="0.84882885220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="zzQ-3J-W6G" firstAttribute="top" secondItem="qSd-sf-Wpj" secondAttribute="top" constant="2" id="CwQ-M2-Lrt"/>
                                     <constraint firstItem="zzQ-3J-W6G" firstAttribute="centerX" secondItem="qSd-sf-Wpj" secondAttribute="centerX" id="QeG-TL-Fg5"/>
@@ -1602,7 +1631,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.12659415199999999" green="0.56907582560000003" blue="0.53173319789999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.61176470588235299" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="0sz-5N-tcl" firstAttribute="trailing" secondItem="qSd-sf-Wpj" secondAttribute="trailing" id="Izl-11-MBE"/>
                             <constraint firstAttribute="trailing" secondItem="qSd-sf-Wpj" secondAttribute="trailing" id="Jcc-Xh-E2e"/>
@@ -1636,7 +1665,7 @@
         <!--Data Offer Details View Controller-->
         <scene sceneID="lst-Oj-r7x">
             <objects>
-                <viewController id="F5Z-1y-uMq" customClass="DataOfferDetailsViewController" customModule="hat_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="F5Z-1y-uMq" customClass="DataOfferDetailsViewController" customModule="xtiva" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jOx-dV-83U"/>
                         <viewControllerLayoutGuide type="bottom" id="d7c-5a-ilS"/>
@@ -1658,7 +1687,7 @@
                                                         <rect key="frame" x="17" y="18" width="251" height="95"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYu-LI-amZ">
-                                                        <rect key="frame" x="123.5" y="134" width="40.5" height="29"/>
+                                                        <rect key="frame" x="124" y="134" width="40.5" height="29"/>
                                                         <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="15"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -1873,7 +1902,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.12659415199999999" green="0.56907582560000003" blue="0.53173319789999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.61163347960000003" blue="0.84882885220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="AeO-sR-Tkz" secondAttribute="bottom" constant="3" id="9qE-qp-ciw"/>
                                     <constraint firstItem="AeO-sR-Tkz" firstAttribute="top" secondItem="Dvq-OE-aGP" secondAttribute="top" constant="2" id="CgY-2q-y8M"/>
@@ -1921,7 +1950,7 @@
         <!--Data View Controller-->
         <scene sceneID="GOc-83-IhQ">
             <objects>
-                <viewController id="bvB-RA-s02" customClass="DataViewController" customModule="hat_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="bvB-RA-s02" customClass="DataViewController" customModule="xtiva" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="E29-Pg-FlE"/>
                         <viewControllerLayoutGuide type="bottom" id="Jea-hN-NLg"/>
@@ -1930,11 +1959,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="74" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DKV-Bg-kw6" customClass="DataPointsTableView" customModule="hat_mobile_ios" customModuleProvider="target">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="74" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DKV-Bg-kw6" customClass="DataPointsTableView" customModule="xtiva" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DataPointTableViewCell" rowHeight="93" id="LdH-ds-X5d" customClass="DataPointTableViewCell" customModule="hat_mobile_ios" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DataPointTableViewCell" rowHeight="93" id="LdH-ds-X5d" customClass="DataPointTableViewCell" customModule="xtiva" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="93"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LdH-ds-X5d" id="LQv-MZ-c2s">
@@ -2022,7 +2051,7 @@
         <!--Settings View Controller-->
         <scene sceneID="gF1-FR-wJC">
             <objects>
-                <viewController id="ArB-7q-wad" customClass="SettingsViewController" customModule="hat_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ArB-7q-wad" customClass="SettingsViewController" customModule="xtiva" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VK7-An-16d"/>
                         <viewControllerLayoutGuide type="bottom" id="4wC-r4-cUF"/>
@@ -2043,7 +2072,7 @@
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="52K-an-kbG">
                                 <rect key="frame" x="255" y="72" width="51" height="31"/>
-                                <color key="onTintColor" red="0.14545908569999999" green="0.6371675134" blue="0.59365117550000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="onTintColor" red="0.0" green="0.61163347960000003" blue="0.84882885220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="locationSwitch:" destination="ArB-7q-wad" eventType="valueChanged" id="vzP-VF-pno"/>
                                 </connections>
@@ -2094,12 +2123,12 @@
         <!--GetAHAT View Controller-->
         <scene sceneID="ApI-b9-Jot">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="TSy-7L-1oP" customClass="GetAHATViewController" customModule="hat_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="TSy-7L-1oP" customClass="GetAHATViewController" customModule="xtiva" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="diy-HZ-ac0"/>
                         <viewControllerLayoutGuide type="bottom" id="F3b-97-oAE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" misplaced="YES" id="VNQ-Iy-ppa">
+                    <view key="view" contentMode="scaleToFill" id="VNQ-Iy-ppa">
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -2113,7 +2142,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="onboardingTile" id="Aip-Zx-DFQ" customClass="OnboardingTileCollectionViewCell" customModule="hat_mobile_ios" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="onboardingTile" id="Aip-Zx-DFQ" customClass="OnboardingTileCollectionViewCell" customModule="xtiva" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="425"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -2136,7 +2165,7 @@
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
                                                     <state key="normal" title="Sign Up">
-                                                        <color key="titleColor" red="0.14487174150000001" green="0.6410967112" blue="0.59759420159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="titleColor" red="0.0" green="0.61163347960000003" blue="0.84882885220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </state>
                                                     <connections>
                                                         <action selector="signUpButtonAction:" destination="TSy-7L-1oP" eventType="touchUpInside" id="GXq-Ng-tRc"/>
@@ -2148,7 +2177,7 @@
                                                         <constraint firstAttribute="height" constant="21" id="v97-Ke-bb5"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="10"/>
-                                                    <color key="textColor" red="0.0" green="0.58628696199999997" blue="0.53447610140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" red="0.0" green="0.61163347960000003" blue="0.84882885220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -2249,7 +2278,7 @@
         <!--GetAHAT Info View Controller-->
         <scene sceneID="xYv-XN-NFj">
             <objects>
-                <viewController storyboardIdentifier="HATProviderInfo" id="9Sr-Ka-vcX" customClass="GetAHATInfoViewController" customModule="hat_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HATProviderInfo" id="9Sr-Ka-vcX" customClass="GetAHATInfoViewController" customModule="xtiva" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CTU-Nq-T0s"/>
                         <viewControllerLayoutGuide type="bottom" id="9Hp-gZ-ip9"/>
@@ -2283,7 +2312,7 @@
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rHV-v4-tSR">
                                         <rect key="frame" x="39" y="239.5" width="240" height="30"/>
-                                        <color key="backgroundColor" red="0.08235294118" green="0.50980392159999999" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.0" green="0.61163347960000003" blue="0.84882885220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="1RN-Ht-isz"/>
                                         </constraints>
@@ -2366,7 +2395,7 @@
         <!--Stripe View Controller-->
         <scene sceneID="HPB-b3-ydu">
             <objects>
-                <viewController id="F41-Tp-8LH" customClass="StripeViewController" customModule="hat_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="F41-Tp-8LH" customClass="StripeViewController" customModule="xtiva" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SQg-cg-vcn"/>
                         <viewControllerLayoutGuide type="bottom" id="2jz-7X-H4d"/>
@@ -2387,7 +2416,7 @@
                                                     <constraint firstAttribute="height" constant="21" id="AzP-AC-A3L"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
-                                                <color key="textColor" red="0.0" green="0.58628696199999997" blue="0.53447610140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.0" green="0.61163347960000003" blue="0.84882885220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2hF-9N-VeY">
@@ -2406,7 +2435,7 @@
                                                     <constraint firstAttribute="height" constant="21" id="00I-VX-zun"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
-                                                <color key="textColor" red="0.0" green="0.58628696199999997" blue="0.53447610140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.0" green="0.61163347960000003" blue="0.84882885220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="py4-Bx-Rll">
@@ -2428,7 +2457,7 @@
                                                     <constraint firstAttribute="width" constant="187" id="tZw-BF-o4k"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
-                                                <color key="textColor" red="0.0" green="0.58628696199999997" blue="0.53447610140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.0" green="0.61163347960000003" blue="0.84882885220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create your HAT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vaR-cZ-8ld">
@@ -2446,7 +2475,7 @@
                                                     <constraint firstAttribute="height" constant="21" id="drW-K6-Gwf"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
-                                                <color key="textColor" red="0.0" green="0.58628696199999997" blue="0.53447610140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.0" green="0.61163347960000003" blue="0.84882885220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="48v-Lm-q4b">
@@ -2484,7 +2513,7 @@
                                                     <constraint firstAttribute="width" constant="187" id="kqd-QB-6Jz"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
-                                                <color key="textColor" red="0.0" green="0.58628696199999997" blue="0.53447610140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.0" green="0.61163347960000003" blue="0.84882885220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Line" translatesAutoresizingMaskIntoConstraints="NO" id="Xd0-z8-xA5">
@@ -2496,7 +2525,7 @@
                                                     <constraint firstAttribute="height" constant="21" id="Kfl-Yj-Hwg"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
-                                                <color key="textColor" red="0.0" green="0.58628696199999997" blue="0.53447610140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.0" green="0.61163347960000003" blue="0.84882885220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="whr-pj-0QQ">
@@ -2518,7 +2547,7 @@
                                                     <constraint firstAttribute="height" constant="21" id="oZJ-E6-8k9"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
-                                                <color key="textColor" red="0.0" green="0.58628696199999997" blue="0.53447610140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.0" green="0.61163347960000003" blue="0.84882885220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BT5-ys-ocF">
@@ -2537,7 +2566,7 @@
                                                     <constraint firstAttribute="height" constant="21" id="9uM-ad-n6k"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
-                                                <color key="textColor" red="0.0" green="0.58628696199999997" blue="0.53447610140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.0" green="0.61163347960000003" blue="0.84882885220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JPF-bz-2p4">
@@ -2574,10 +2603,10 @@
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
-                                                        <color key="value" red="0.0" green="0.58628696199999997" blue="0.53447610140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="value" red="0.0" green="0.61163347960000003" blue="0.84882885220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="onCheckColor">
-                                                        <color key="value" red="0.0" green="0.58628696199999997" blue="0.53447610140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="value" red="0.0" green="0.61163347960000003" blue="0.84882885220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="on" value="NO"/>
                                                 </userDefinedRuntimeAttributes>
@@ -2600,12 +2629,12 @@
                                                     <constraint firstAttribute="height" constant="21" id="6wD-hb-697"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
-                                                <color key="textColor" red="0.0" green="0.58628696199999997" blue="0.53447610140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.0" green="0.61163347960000003" blue="0.84882885220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JAs-Yj-7hx">
                                                 <rect key="frame" x="8" y="824" width="305" height="30"/>
-                                                <color key="backgroundColor" red="0.0" green="0.58628696199999997" blue="0.53447610140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.0" green="0.61163347960000003" blue="0.84882885220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="Xwn-G6-LR6"/>
                                                 </constraints>
@@ -2625,10 +2654,10 @@
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
-                                                        <color key="value" red="0.0" green="0.58628696199999997" blue="0.53447610140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="value" red="0.0" green="0.61163347960000003" blue="0.84882885220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="onCheckColor">
-                                                        <color key="value" red="0.0" green="0.58628696199999997" blue="0.53447610140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="value" red="0.0" green="0.61163347960000003" blue="0.84882885220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="on" value="NO"/>
                                                 </userDefinedRuntimeAttributes>
@@ -2820,7 +2849,7 @@
         <!--Notes-->
         <scene sceneID="fXN-3h-Pjq">
             <objects>
-                <viewController id="f85-QV-g2W" customClass="NotablesViewController" customModule="hat_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="f85-QV-g2W" customClass="NotablesViewController" customModule="xtiva" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Zs5-Ga-pZt"/>
                         <viewControllerLayoutGuide type="bottom" id="lVl-QC-z0N"/>
@@ -2830,7 +2859,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accessing your HAT..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqK-nY-8Dr">
-                                <rect key="frame" x="8" y="248" width="305" height="23.5"/>
+                                <rect key="frame" x="8" y="248.5" width="305" height="23.5"/>
                                 <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -2839,7 +2868,7 @@
                                 <rect key="frame" x="0.0" y="64" width="320" height="426"/>
                                 <color key="backgroundColor" red="0.11489913612604141" green="0.19210577011108398" blue="0.20907124876976013" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellData" rowHeight="139" id="TjC-3X-AF5" customClass="NotablesTableViewCell" customModule="hat_mobile_ios" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellData" rowHeight="139" id="TjC-3X-AF5" customClass="NotablesTableViewCell" customModule="xtiva" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="139"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TjC-3X-AF5" id="nFU-b5-3He">
@@ -2890,7 +2919,7 @@
                                                         <inset key="sectionInset" minX="0.0" minY="2" maxX="0.0" maxY="0.0"/>
                                                     </collectionViewFlowLayout>
                                                     <cells>
-                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" reuseIdentifier="socialCell" id="8Km-R0-gpQ" customClass="SocialImageCollectionViewCell" customModule="hat_mobile_ios" customModuleProvider="target">
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" reuseIdentifier="socialCell" id="8Km-R0-gpQ" customClass="SocialImageCollectionViewCell" customModule="xtiva" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="2.5" width="22" height="22"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -2955,7 +2984,7 @@
                                             <segue destination="omu-es-gVw" kind="show" identifier="editNoteSegue" id="K29-cj-KVX"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellDataWithImage" rowHeight="235" id="vcR-O3-pTf" customClass="NotablesTableViewCell" customModule="hat_mobile_ios" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellDataWithImage" rowHeight="235" id="vcR-O3-pTf" customClass="NotablesTableViewCell" customModule="xtiva" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="167" width="320" height="235"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vcR-O3-pTf" id="E93-lQ-Zbe">
@@ -3006,7 +3035,7 @@
                                                         <inset key="sectionInset" minX="0.0" minY="2" maxX="0.0" maxY="0.0"/>
                                                     </collectionViewFlowLayout>
                                                     <cells>
-                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" reuseIdentifier="socialCell" id="jZO-G6-kIx" customClass="SocialImageCollectionViewCell" customModule="hat_mobile_ios" customModuleProvider="target">
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" reuseIdentifier="socialCell" id="jZO-G6-kIx" customClass="SocialImageCollectionViewCell" customModule="xtiva" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="2.5" width="22" height="22"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -3050,7 +3079,7 @@
                                                         <constraint firstAttribute="width" constant="142" id="hNS-oM-C7O"/>
                                                     </constraints>
                                                 </imageView>
-                                                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Im9-et-VJk" customClass="RingProgressCircle" customModule="hat_mobile_ios" customModuleProvider="target">
+                                                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Im9-et-VJk" customClass="RingProgressCircle" customModule="xtiva" customModuleProvider="target">
                                                     <rect key="frame" x="216" y="132" width="50" height="50"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <constraints>
@@ -3099,7 +3128,7 @@
                                 </connections>
                             </tableView>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FEm-cT-lG1">
-                                <rect key="frame" x="145" y="291" width="30" height="30"/>
+                                <rect key="frame" x="145" y="291.5" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="QeO-7o-UAY"/>
                                     <constraint firstAttribute="height" constant="30" id="qB5-Qq-Hws"/>
@@ -3127,7 +3156,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.58628696199999997" blue="0.53447610140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.61163347959518433" blue="0.84882885217666626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="pwe-fR-BOt" firstAttribute="centerX" secondItem="InD-IA-mYc" secondAttribute="centerX" id="agr-pV-1hU"/>
                                     <constraint firstAttribute="bottom" secondItem="pwe-fR-BOt" secondAttribute="bottom" constant="6" id="gZU-1h-2zD"/>
@@ -3171,7 +3200,7 @@
         <!--Loading Screen With Progress Ring View Controller-->
         <scene sceneID="HKX-TQ-xuZ">
             <objects>
-                <viewController storyboardIdentifier="loadingScreen" id="l9C-OY-AeN" customClass="LoadingScreenWithProgressRingViewController" customModule="hat_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loadingScreen" id="l9C-OY-AeN" customClass="LoadingScreenWithProgressRingViewController" customModule="xtiva" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DGb-m2-F20"/>
                         <viewControllerLayoutGuide type="bottom" id="Q2f-ec-eh8"/>
@@ -3180,7 +3209,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="150" height="170"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UAx-kn-Ht3" customClass="RingProgressCircle" customModule="hat_mobile_ios" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UAx-kn-Ht3" customClass="RingProgressCircle" customModule="xtiva" customModuleProvider="target">
                                 <rect key="frame" x="25" y="41" width="100" height="100"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -3227,7 +3256,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.14545908569999999" green="0.6371675134" blue="0.59365117550000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.61163347959518433" blue="0.84882885217666626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="cmf-7M-5iJ" firstAttribute="top" secondItem="dUB-LS-FXi" secondAttribute="topMargin" constant="12" id="40G-oc-6eL"/>
                             <constraint firstItem="UAx-kn-Ht3" firstAttribute="top" secondItem="DGb-m2-F20" secondAttribute="bottom" constant="21" id="5Yg-EI-VC2"/>
@@ -3254,7 +3283,7 @@
         <!--Note-->
         <scene sceneID="kfW-GN-ydW">
             <objects>
-                <viewController id="omu-es-gVw" customClass="ShareOptionsViewController" customModule="hat_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="omu-es-gVw" customClass="ShareOptionsViewController" customModule="xtiva" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0rH-zG-X90"/>
                         <viewControllerLayoutGuide type="bottom" id="lab-W1-wpF"/>
@@ -3267,7 +3296,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="414"/>
                                 <subviews>
                                     <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" axis="vertical" alignment="center" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cj5-8P-6w4">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="414"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="304"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" horizontalHuggingPriority="1" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BQp-xy-P0p">
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="153"/>
@@ -3296,7 +3325,7 @@
                                                 <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
                                             </view>
                                             <collectionView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7Ln-ch-lvK">
-                                                <rect key="frame" x="0.0" y="153" width="320" height="110"/>
+                                                <rect key="frame" x="0.0" y="153" width="320" height="0.0"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="110" id="aVz-Hu-uee"/>
@@ -3308,18 +3337,14 @@
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="addedImageCell" id="USP-W7-mM4" customClass="ShareOptionsSelectedImageCollectionViewCell" customModule="hat_mobile_ios" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="addedImageCell" id="USP-W7-mM4" customClass="ShareOptionsSelectedImageCollectionViewCell" customModule="xtiva" customModuleProvider="target">
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                                            <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
-                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Onw-zu-4D8">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
-                                                                </imageView>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Onw-zu-4D8"/>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a7D-k9-Y0V">
-                                                                    <rect key="frame" x="80" y="5" width="23" height="23"/>
+                                                                    <rect key="frame" x="-30" y="5" width="23" height="23"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="23" id="RwY-Of-R7w"/>
                                                                         <constraint firstAttribute="width" constant="23" id="hfR-3q-g4g"/>
@@ -3329,8 +3354,8 @@
                                                                         <action selector="cancelButtonAction:" destination="USP-W7-mM4" eventType="touchUpInside" id="Ql8-bQ-Nq8"/>
                                                                     </connections>
                                                                 </button>
-                                                                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OMQ-U4-zG1" customClass="RingProgressCircle" customModule="hat_mobile_ios" customModuleProvider="target">
-                                                                    <rect key="frame" x="37.5" y="37.5" width="35" height="35"/>
+                                                                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OMQ-U4-zG1" customClass="RingProgressCircle" customModule="xtiva" customModuleProvider="target">
+                                                                    <rect key="frame" x="-17.5" y="-17.5" width="35" height="35"/>
                                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="35" id="gUr-jF-YO4"/>
@@ -3373,7 +3398,7 @@
                                                 </connections>
                                             </collectionView>
                                             <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JmQ-cQ-mR3">
-                                                <rect key="frame" x="0.0" y="263" width="320" height="151"/>
+                                                <rect key="frame" x="0.0" y="153" width="320" height="151"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4z-aX-X5S">
                                                         <rect key="frame" x="8" y="12" width="25" height="25"/>
@@ -3401,7 +3426,7 @@
                                                             <constraint firstAttribute="height" constant="31" id="Wo4-ak-7GL"/>
                                                             <constraint firstAttribute="width" constant="49" id="hFa-fc-4aR"/>
                                                         </constraints>
-                                                        <color key="onTintColor" red="0.0" green="0.58628696199999997" blue="0.53447610140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="onTintColor" red="0.0" green="0.61163347960000003" blue="0.84882885220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <connections>
                                                             <action selector="publicSwitchStateChanged:" destination="omu-es-gVw" eventType="valueChanged" id="bc1-i7-bN5"/>
                                                         </connections>
@@ -3426,7 +3451,7 @@
                                                                     <constraint firstAttribute="width" constant="112" id="9gH-UE-Rzo"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
-                                                                <color key="textColor" red="0.0" green="0.58628696199999997" blue="0.53447610140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="textColor" red="0.0" green="0.61163347960000003" blue="0.84882885220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
@@ -3635,7 +3660,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.58628696199999997" blue="0.53447610140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.61163347960000003" blue="0.84882885220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="nyF-Dq-En6" firstAttribute="top" secondItem="PJm-iR-fwX" secondAttribute="top" constant="6" id="KNM-hB-Wne"/>
                                     <constraint firstItem="nyF-Dq-En6" firstAttribute="leading" secondItem="0gN-K9-4fA" secondAttribute="trailing" constant="8" id="PVs-FB-Pzf"/>
@@ -3710,7 +3735,7 @@
         <!--Add Location-->
         <scene sceneID="izm-8P-db0">
             <objects>
-                <viewController id="xCe-Uv-qit" customClass="CheckInMapViewController" customModule="hat_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="xCe-Uv-qit" customClass="CheckInMapViewController" customModule="xtiva" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4vf-ss-x9Q"/>
                         <viewControllerLayoutGuide type="bottom" id="f1W-7z-ab7"/>
@@ -3782,7 +3807,7 @@
         <!--Notes-->
         <scene sceneID="cEx-lr-1cO">
             <objects>
-                <tabBarController storyboardIdentifier="tabBarControllerID" automaticallyAdjustsScrollViewInsets="NO" id="Qkh-YZ-tmw" customClass="TabBarViewController" customModule="hat_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBarControllerID" automaticallyAdjustsScrollViewInsets="NO" id="Qkh-YZ-tmw" customClass="TabBarViewController" customModule="xtiva" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" title="Notes" id="Ht2-6p-toc"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="EPN-1v-nes">
@@ -3806,7 +3831,7 @@
         <!--More-->
         <scene sceneID="2vB-Ho-yPc">
             <objects>
-                <viewController id="ZcN-ia-0Jf" customClass="MoreTableViewController" customModule="hat_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ZcN-ia-0Jf" customClass="MoreTableViewController" customModule="xtiva" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gc5-WD-Rvr"/>
                         <viewControllerLayoutGuide type="bottom" id="XZP-cQ-6jI"/>
@@ -3869,13 +3894,13 @@
         <!--Change Password-->
         <scene sceneID="xzh-Sh-1x2">
             <objects>
-                <tableViewController id="wDI-A0-0ja" customClass="ResetPasswordTableViewController" customModule="hat_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="wDI-A0-0ja" customClass="ResetPasswordTableViewController" customModule="xtiva" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="aEK-3w-2zY">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="resetPasswordCell" id="sTN-Mk-k8D" customClass="ResetPasswordTableViewCell" customModule="hat_mobile_ios" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="resetPasswordCell" id="sTN-Mk-k8D" customClass="ResetPasswordTableViewCell" customModule="xtiva" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="55.5" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sTN-Mk-k8D" id="lmZ-zR-bZf">
@@ -3927,7 +3952,7 @@
         <!--PHATA-->
         <scene sceneID="uh5-0g-ogX">
             <objects>
-                <tableViewController id="QCY-ZL-SNu" customClass="PhataTableViewController" customModule="hat_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="QCY-ZL-SNu" customClass="PhataTableViewController" customModule="xtiva" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="erZ-O2-Bza">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3968,13 +3993,13 @@
         <!--Name-->
         <scene sceneID="uBs-8N-Nv6">
             <objects>
-                <tableViewController id="o5i-F7-7vc" customClass="NameTableViewController" customModule="hat_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="o5i-F7-7vc" customClass="NameTableViewController" customModule="xtiva" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="KDJ-xR-l2i">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="nameCell" id="Ueo-aN-UjF" customClass="PhataTableViewCell" customModule="hat_mobile_ios" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="nameCell" id="Ueo-aN-UjF" customClass="PhataTableViewCell" customModule="xtiva" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="55.5" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ueo-aN-UjF" id="cxw-3q-VxG">
@@ -3987,7 +4012,7 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
                                         </textField>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QzR-TI-Jx2" customClass="CustomSwitch" customModule="hat_mobile_ios" customModuleProvider="target">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QzR-TI-Jx2" customClass="CustomSwitch" customModule="xtiva" customModuleProvider="target">
                                             <rect key="frame" x="262" y="7" width="50" height="30"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
@@ -3995,7 +4020,7 @@
                                             </constraints>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
-                                                    <color key="value" red="0.14545908569999999" green="0.6371675134" blue="0.59365117550000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="value" red="0.0" green="0.61163347960000003" blue="0.84882885220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="color" keyPath="offTintColor">
                                                     <color key="value" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -4048,7 +4073,7 @@
         <!--Social Data-->
         <scene sceneID="fm5-0J-UrW">
             <objects>
-                <viewController id="xvM-wD-caY" customClass="SocialFeedViewController" customModule="hat_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="xvM-wD-caY" customClass="SocialFeedViewController" customModule="xtiva" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YG6-XN-r9T"/>
                         <viewControllerLayoutGuide type="bottom" id="o9P-dr-mXx"/>
@@ -4073,7 +4098,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="statusSocialFeedCell" id="jPI-nt-CZH" customClass="SocialFeedCollectionViewCell" customModule="hat_mobile_ios" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="statusSocialFeedCell" id="jPI-nt-CZH" customClass="SocialFeedCollectionViewCell" customModule="xtiva" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="95"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -4181,7 +4206,7 @@
                                             <outlet property="profileNameLabel" destination="xlj-Ms-Tqg" id="N3D-ku-liy"/>
                                         </connections>
                                     </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="imageSocialFeedCell" id="4LN-de-skn" customClass="SocialFeedCollectionViewCell" customModule="hat_mobile_ios" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="imageSocialFeedCell" id="4LN-de-skn" customClass="SocialFeedCollectionViewCell" customModule="xtiva" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="105" width="320" height="230"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -4338,7 +4363,7 @@
         <!--Images-->
         <scene sceneID="WxL-Ys-5nb">
             <objects>
-                <viewController id="vRc-AS-X6W" customClass="PhotoViewerViewController" customModule="hat_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vRc-AS-X6W" customClass="PhotoViewerViewController" customModule="xtiva" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="llO-gm-1pc"/>
                         <viewControllerLayoutGuide type="bottom" id="usR-Qc-0a6"/>
@@ -4364,7 +4389,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="photosCell" id="Oxk-QE-u8p" customClass="PhotosCollectionViewCell" customModule="hat_mobile_ios" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="photosCell" id="Oxk-QE-u8p" customClass="PhotosCollectionViewCell" customModule="xtiva" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -4374,7 +4399,7 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image Placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="SRf-ZB-ClW">
                                                     <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                 </imageView>
-                                                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VMd-rN-zA6" customClass="RingProgressCircle" customModule="hat_mobile_ios" customModuleProvider="target">
+                                                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VMd-rN-zA6" customClass="RingProgressCircle" customModule="xtiva" customModuleProvider="target">
                                                     <rect key="frame" x="25" y="25" width="50" height="50"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <constraints>
@@ -4437,7 +4462,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.14545908569999999" green="0.6371675134" blue="0.59365117550000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.61163347960000003" blue="0.84882885220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="Rh3-x0-GlW"/>
                                     <constraint firstItem="WpQ-ir-akY" firstAttribute="centerY" secondItem="rlZ-yq-wY2" secondAttribute="centerY" id="cQa-cY-mf5"/>
@@ -4475,7 +4500,7 @@
         <!--Photo Full Screen Viewer View Controller-->
         <scene sceneID="Ibc-Jy-1zZ">
             <objects>
-                <viewController id="v77-9E-bTS" customClass="PhotoFullScreenViewerViewController" customModule="hat_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="v77-9E-bTS" customClass="PhotoFullScreenViewerViewController" customModule="xtiva" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mET-GW-H8Q"/>
                         <viewControllerLayoutGuide type="bottom" id="nzS-BX-Ohv"/>
@@ -4497,7 +4522,7 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
                                         <state key="normal" title="Set Image As Profile Image">
-                                            <color key="titleColor" red="0.12659415199999999" green="0.56907582560000003" blue="0.53173319789999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" red="0.0" green="0.61163347960000003" blue="0.84882885220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="setImageAsProfileImageAction:" destination="v77-9E-bTS" eventType="touchUpInside" id="YCu-3l-9f4"/>
@@ -4518,7 +4543,7 @@
                                     <outlet property="delegate" destination="v77-9E-bTS" id="DQT-53-Dhn"/>
                                 </connections>
                             </scrollView>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HjS-U2-UNr" customClass="RingProgressCircle" customModule="hat_mobile_ios" customModuleProvider="target">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HjS-U2-UNr" customClass="RingProgressCircle" customModule="xtiva" customModuleProvider="target">
                                 <rect key="frame" x="135" y="202.5" width="50" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -4585,7 +4610,7 @@
         <!--Data Store-->
         <scene sceneID="YGf-2D-Hzz">
             <objects>
-                <tableViewController id="apV-lR-PYY" customClass="DataStoreTableViewController" customModule="hat_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="apV-lR-PYY" customClass="DataStoreTableViewController" customModule="xtiva" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="UsZ-WQ-CHg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -4622,13 +4647,13 @@
         <!--Name-->
         <scene sceneID="205-Bs-Seq">
             <objects>
-                <tableViewController id="ksA-vn-U5k" customClass="DataSourceNameTableViewController" customModule="hat_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="ksA-vn-U5k" customClass="DataSourceNameTableViewController" customModule="xtiva" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="BNp-Ha-j8g">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="dataStoreNameCell" id="7zv-xe-tR4" customClass="PhataTableViewCell" customModule="hat_mobile_ios" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="dataStoreNameCell" id="7zv-xe-tR4" customClass="PhataTableViewCell" customModule="xtiva" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="55.5" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7zv-xe-tR4" id="Qft-pb-sNQ">
@@ -4680,8 +4705,8 @@
         <!--Data Plugs-->
         <scene sceneID="tL6-wp-nlK">
             <objects>
-                <collectionViewController id="Zm4-mn-pPm" customClass="DataPlugsCollectionViewController" customModule="hat_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" id="VpC-ZV-WXZ">
+                <collectionViewController id="Zm4-mn-pPm" customClass="DataPlugsCollectionViewController" customModule="xtiva" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" dataMode="prototypes" id="VpC-ZV-WXZ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -4692,7 +4717,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" reuseIdentifier="dataPlugCell" id="0TD-qU-FsG" customClass="DataPlugCollectionViewCell" customModule="hat_mobile_ios" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" reuseIdentifier="dataPlugCell" id="0TD-qU-FsG" customClass="DataPlugCollectionViewCell" customModule="xtiva" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -4787,13 +4812,13 @@
         <!--Email-->
         <scene sceneID="eaJ-q8-iYX">
             <objects>
-                <tableViewController id="OOQ-w5-kdQ" customClass="EmailTableViewController" customModule="hat_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="OOQ-w5-kdQ" customClass="EmailTableViewController" customModule="xtiva" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="Dn3-Vu-A93">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="emailCell" id="eJl-0s-l7S" customClass="PhataTableViewCell" customModule="hat_mobile_ios" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="emailCell" id="eJl-0s-l7S" customClass="PhataTableViewCell" customModule="xtiva" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="55.5" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eJl-0s-l7S" id="CTU-FF-ATx">
@@ -4806,7 +4831,7 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" keyboardType="emailAddress" keyboardAppearance="alert"/>
                                         </textField>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BjA-a3-hpH" customClass="CustomSwitch" customModule="hat_mobile_ios" customModuleProvider="target">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BjA-a3-hpH" customClass="CustomSwitch" customModule="xtiva" customModuleProvider="target">
                                             <rect key="frame" x="262" y="7" width="50" height="30"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
@@ -4814,7 +4839,7 @@
                                             </constraints>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
-                                                    <color key="value" red="0.14545908569999999" green="0.6371675134" blue="0.59365117550000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="value" red="0.0" green="0.61163347960000003" blue="0.84882885220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="color" keyPath="offTintColor">
                                                     <color key="value" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -4867,13 +4892,13 @@
         <!--Phone-->
         <scene sceneID="Xk7-AT-GI0">
             <objects>
-                <tableViewController id="LKz-YA-kTu" customClass="PhoneTableViewController" customModule="hat_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="LKz-YA-kTu" customClass="PhoneTableViewController" customModule="xtiva" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="on0-hq-Oxr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="phoneCell" id="7Sj-WQ-Chh" customClass="PhataTableViewCell" customModule="hat_mobile_ios" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="phoneCell" id="7Sj-WQ-Chh" customClass="PhataTableViewCell" customModule="xtiva" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="55.5" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7Sj-WQ-Chh" id="29X-Iu-Nmd">
@@ -4886,7 +4911,7 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
                                         </textField>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="stM-Zn-Thp" customClass="CustomSwitch" customModule="hat_mobile_ios" customModuleProvider="target">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="stM-Zn-Thp" customClass="CustomSwitch" customModule="xtiva" customModuleProvider="target">
                                             <rect key="frame" x="262" y="7" width="50" height="30"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
@@ -4894,7 +4919,7 @@
                                             </constraints>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
-                                                    <color key="value" red="0.14545908569999999" green="0.6371675134" blue="0.59365117550000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="value" red="0.0" green="0.61163347960000003" blue="0.84882885220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="color" keyPath="offTintColor">
                                                     <color key="value" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -4947,13 +4972,13 @@
         <!--Address-->
         <scene sceneID="xPE-ta-2VA">
             <objects>
-                <tableViewController id="8ae-nD-T4a" customClass="AddressTableViewController" customModule="hat_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="8ae-nD-T4a" customClass="AddressTableViewController" customModule="xtiva" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="IdR-7i-Ril">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="addressCell" id="BI4-es-8fw" customClass="PhataTableViewCell" customModule="hat_mobile_ios" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="addressCell" id="BI4-es-8fw" customClass="PhataTableViewCell" customModule="xtiva" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="55.5" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BI4-es-8fw" id="uuP-i6-4aN">
@@ -4966,7 +4991,7 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
                                         </textField>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fdp-S1-dcg" customClass="CustomSwitch" customModule="hat_mobile_ios" customModuleProvider="target">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fdp-S1-dcg" customClass="CustomSwitch" customModule="xtiva" customModuleProvider="target">
                                             <rect key="frame" x="262" y="7" width="50" height="30"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
@@ -4974,7 +4999,7 @@
                                             </constraints>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
-                                                    <color key="value" red="0.14545908569999999" green="0.6371675134" blue="0.59365117550000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="value" red="0.0" green="0.61163347960000003" blue="0.84882885220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="color" keyPath="offTintColor">
                                                     <color key="value" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -5027,13 +5052,13 @@
         <!--Social Links-->
         <scene sceneID="qVx-DK-pFI">
             <objects>
-                <tableViewController id="b7Q-3u-xEB" customClass="SocialLinksTableViewController" customModule="hat_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="b7Q-3u-xEB" customClass="SocialLinksTableViewController" customModule="xtiva" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="0Vd-M4-6vj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="socialLinksCell" id="Heo-NZ-9FT" customClass="PhataTableViewCell" customModule="hat_mobile_ios" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="socialLinksCell" id="Heo-NZ-9FT" customClass="PhataTableViewCell" customModule="xtiva" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="55.5" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Heo-NZ-9FT" id="bZ7-8o-6uV">
@@ -5046,7 +5071,7 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
                                         </textField>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AVF-p5-luI" customClass="CustomSwitch" customModule="hat_mobile_ios" customModuleProvider="target">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AVF-p5-luI" customClass="CustomSwitch" customModule="xtiva" customModuleProvider="target">
                                             <rect key="frame" x="262" y="7" width="50" height="30"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
@@ -5054,7 +5079,7 @@
                                             </constraints>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
-                                                    <color key="value" red="0.14545908569999999" green="0.6371675134" blue="0.59365117550000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="value" red="0.0" green="0.61163347960000003" blue="0.84882885220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="color" keyPath="offTintColor">
                                                     <color key="value" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -5107,20 +5132,20 @@
         <!--About-->
         <scene sceneID="oCs-b7-PQ2">
             <objects>
-                <tableViewController id="Auk-so-H3O" customClass="AboutTableViewController" customModule="hat_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Auk-so-H3O" customClass="AboutTableViewController" customModule="xtiva" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="OiU-2h-YVL">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="aboutCell" id="2L2-rT-rLg" customClass="PhataTableViewCell" customModule="hat_mobile_ios" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="aboutCell" id="2L2-rT-rLg" customClass="PhataTableViewCell" customModule="xtiva" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="55.5" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2L2-rT-rLg" id="pX6-MF-qbV">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="so8-Ue-SUX" customClass="CustomSwitch" customModule="hat_mobile_ios" customModuleProvider="target">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="so8-Ue-SUX" customClass="CustomSwitch" customModule="xtiva" customModuleProvider="target">
                                             <rect key="frame" x="262" y="7" width="50" height="30"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
@@ -5129,7 +5154,7 @@
                                             </constraints>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
-                                                    <color key="value" red="0.14545908569999999" green="0.6371675134" blue="0.59365117550000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="value" red="0.0" green="0.61163347960000003" blue="0.84882885220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="color" keyPath="offTintColor">
                                                     <color key="value" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -5191,13 +5216,13 @@
         <!--Profile Info-->
         <scene sceneID="zSK-SN-FlZ">
             <objects>
-                <tableViewController id="x8B-hh-Hhw" customClass="ProfileInfoTableViewController" customModule="hat_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="x8B-hh-Hhw" customClass="ProfileInfoTableViewController" customModule="xtiva" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="IIg-C7-0po">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="profileInfoCell" id="byv-vX-9aU" customClass="PhataTableViewCell" customModule="hat_mobile_ios" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="profileInfoCell" id="byv-vX-9aU" customClass="PhataTableViewCell" customModule="xtiva" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="55.5" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="byv-vX-9aU" id="Ko5-bC-EWU">
@@ -5210,7 +5235,7 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
                                         </textField>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L5g-Od-ysI" customClass="CustomSwitch" customModule="hat_mobile_ios" customModuleProvider="target">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L5g-Od-ysI" customClass="CustomSwitch" customModule="xtiva" customModuleProvider="target">
                                             <rect key="frame" x="262" y="7" width="50" height="30"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
@@ -5218,7 +5243,7 @@
                                             </constraints>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
-                                                    <color key="value" red="0.14545908569999999" green="0.6371675134" blue="0.59365117550000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="value" red="0.0" green="0.61163347960000003" blue="0.84882885220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="color" keyPath="offTintColor">
                                                     <color key="value" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -5271,7 +5296,7 @@
         <!--Profile Picture-->
         <scene sceneID="CK3-eG-4ee">
             <objects>
-                <viewController id="Nho-G7-h7U" customClass="PhataPictureViewController" customModule="hat_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Nho-G7-h7U" customClass="PhataPictureViewController" customModule="xtiva" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Lt3-vn-EMG"/>
                         <viewControllerLayoutGuide type="bottom" id="p66-wm-Oj2"/>
@@ -5288,7 +5313,7 @@
                                     <constraint firstAttribute="width" constant="150" id="q7D-HF-CJa"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1EM-H0-WN6" customClass="CustomSwitch" customModule="hat_mobile_ios" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1EM-H0-WN6" customClass="CustomSwitch" customModule="xtiva" customModuleProvider="target">
                                 <rect key="frame" x="254" y="228" width="50" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -5297,7 +5322,7 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
-                                        <color key="value" red="0.14545908569999999" green="0.6371675134" blue="0.59365117550000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="0.0" green="0.61163347960000003" blue="0.84882885220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="offTintColor">
                                         <color key="value" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -5327,7 +5352,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="profilePictureCell" id="SWR-i9-QBP" customClass="PhotosCollectionViewCell" customModule="hat_mobile_ios" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="profilePictureCell" id="SWR-i9-QBP" customClass="PhotosCollectionViewCell" customModule="xtiva" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="33" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -5337,7 +5362,7 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image Placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="HAh-6T-kKB">
                                                     <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                 </imageView>
-                                                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C5B-Hk-QfC" customClass="RingProgressCircle" customModule="hat_mobile_ios" customModuleProvider="target">
+                                                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C5B-Hk-QfC" customClass="RingProgressCircle" customModule="xtiva" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <constraints>
@@ -5380,7 +5405,7 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
-                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="profileImageHeader" id="Drx-rR-qSQ" customClass="PhotosHeaderCollectionReusableView" customModule="hat_mobile_ios" customModuleProvider="target">
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="profileImageHeader" id="Drx-rR-qSQ" customClass="PhotosHeaderCollectionReusableView" customModule="xtiva" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="33"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -5402,7 +5427,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <color key="backgroundColor" red="0.14487174150000001" green="0.6410967112" blue="0.59759420159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" red="0.0" green="0.61163347960000003" blue="0.84882885220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstItem="rz1-nL-mUP" firstAttribute="top" secondItem="Drx-rR-qSQ" secondAttribute="top" constant="6" id="6t9-Oq-XVy"/>
                                         <constraint firstAttribute="trailing" secondItem="7AD-y7-4ds" secondAttribute="trailing" constant="8" id="Hsd-ru-omN"/>
@@ -5464,13 +5489,13 @@
         <!--Emergency Contact-->
         <scene sceneID="REX-b2-hjT">
             <objects>
-                <tableViewController id="f3X-xm-vwZ" customClass="EmergencyContactTableViewController" customModule="hat_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="f3X-xm-vwZ" customClass="EmergencyContactTableViewController" customModule="xtiva" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="CYS-RP-ZBU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="emergencyContactCell" id="2di-Bc-5tf" customClass="PhataTableViewCell" customModule="hat_mobile_ios" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="emergencyContactCell" id="2di-Bc-5tf" customClass="PhataTableViewCell" customModule="xtiva" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="55.5" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2di-Bc-5tf" id="cBQ-7F-jzb">
@@ -5483,7 +5508,7 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
                                         </textField>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EFK-4k-rCr" customClass="CustomSwitch" customModule="hat_mobile_ios" customModuleProvider="target">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EFK-4k-rCr" customClass="CustomSwitch" customModule="xtiva" customModuleProvider="target">
                                             <rect key="frame" x="262" y="7" width="50" height="30"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
@@ -5491,7 +5516,7 @@
                                             </constraints>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
-                                                    <color key="value" red="0.14545908569999999" green="0.6371675134" blue="0.59365117550000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="value" red="0.0" green="0.61163347960000003" blue="0.84882885220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="color" keyPath="offTintColor">
                                                     <color key="value" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -5544,13 +5569,13 @@
         <!--PHATA Settings-->
         <scene sceneID="EZr-Sa-aEp">
             <objects>
-                <tableViewController id="6Vg-W8-QTe" customClass="PHATASettingsTableViewController" customModule="hat_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="6Vg-W8-QTe" customClass="PHATASettingsTableViewController" customModule="xtiva" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="gd3-rJ-Nhx">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="phataSettingsCell" id="NqK-tg-Rsy" customClass="PhataTableViewCell" customModule="hat_mobile_ios" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="phataSettingsCell" id="NqK-tg-Rsy" customClass="PhataTableViewCell" customModule="xtiva" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="55.5" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NqK-tg-Rsy" id="XwY-ll-NKf">
@@ -5563,7 +5588,7 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
                                         </textField>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pQo-VS-9Tv" customClass="CustomSwitch" customModule="hat_mobile_ios" customModuleProvider="target">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pQo-VS-9Tv" customClass="CustomSwitch" customModule="xtiva" customModuleProvider="target">
                                             <rect key="frame" x="262" y="7" width="50" height="30"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
@@ -5571,7 +5596,7 @@
                                             </constraints>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
-                                                    <color key="value" red="0.14545908569999999" green="0.6371675134" blue="0.59365117550000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="value" red="0.0" green="0.61163347960000003" blue="0.84882885220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="color" keyPath="offTintColor">
                                                     <color key="value" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -5643,13 +5668,13 @@
         <!--Info-->
         <scene sceneID="F6E-1h-FR9">
             <objects>
-                <tableViewController id="Mcf-4N-WWI" customClass="DataStoreInfoTableViewController" customModule="hat_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Mcf-4N-WWI" customClass="DataStoreInfoTableViewController" customModule="xtiva" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="Soz-5I-w4D">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="dataStoreInfoCell" id="IZV-Dd-Luh" customClass="PhataTableViewCell" customModule="hat_mobile_ios" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="dataStoreInfoCell" id="IZV-Dd-Luh" customClass="PhataTableViewCell" customModule="xtiva" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="55.5" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IZV-Dd-Luh" id="1gS-3B-4bc">
@@ -5701,13 +5726,13 @@
         <!--Contact Info-->
         <scene sceneID="FOD-3c-6PN">
             <objects>
-                <tableViewController id="IHb-iX-6qM" customClass="DataStoreContactInfoTableViewController" customModule="hat_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="IHb-iX-6qM" customClass="DataStoreContactInfoTableViewController" customModule="xtiva" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="fFw-B5-Zex">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="dataStoreContactInfoCell" id="4cQ-IL-R2T" customClass="PhataTableViewCell" customModule="hat_mobile_ios" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="dataStoreContactInfoCell" id="4cQ-IL-R2T" customClass="PhataTableViewCell" customModule="xtiva" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="55.5" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4cQ-IL-R2T" id="CRr-2Z-1y2">
@@ -5759,13 +5784,13 @@
         <!--Nationality-->
         <scene sceneID="fgq-Pw-oxe">
             <objects>
-                <tableViewController id="h0o-kk-ErZ" customClass="DataStoreNationalityTableViewController" customModule="hat_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="h0o-kk-ErZ" customClass="DataStoreNationalityTableViewController" customModule="xtiva" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="HEo-kE-ecW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="dataStoreNationalityCell" id="IHk-kF-piW" customClass="PhataTableViewCell" customModule="hat_mobile_ios" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="dataStoreNationalityCell" id="IHk-kF-piW" customClass="PhataTableViewCell" customModule="xtiva" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="55.5" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IHk-kF-piW" id="J9q-DM-exL">
@@ -5817,13 +5842,13 @@
         <!--Relationship & Household-->
         <scene sceneID="VtJ-8x-zRi">
             <objects>
-                <tableViewController id="kBN-ii-qDR" customClass="DataStoreRelationshipAndHouseholdTableViewController" customModule="hat_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="kBN-ii-qDR" customClass="DataStoreRelationshipAndHouseholdTableViewController" customModule="xtiva" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="rwL-j0-JIV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="dataStoreRelationshipCell" id="0Kp-L2-5Ea" customClass="PhataTableViewCell" customModule="hat_mobile_ios" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="dataStoreRelationshipCell" id="0Kp-L2-5Ea" customClass="PhataTableViewCell" customModule="xtiva" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="55.5" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0Kp-L2-5Ea" id="wDM-Us-fHP">
@@ -5875,13 +5900,13 @@
         <!--Education-->
         <scene sceneID="V4O-Mq-kWJ">
             <objects>
-                <tableViewController id="Twn-bK-3VD" customClass="DataStoreEducationTableViewController" customModule="hat_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Twn-bK-3VD" customClass="DataStoreEducationTableViewController" customModule="xtiva" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="K1e-hn-xGq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="dataStoreEducationCell" id="4B0-o6-sLe" customClass="PhataTableViewCell" customModule="hat_mobile_ios" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="dataStoreEducationCell" id="4B0-o6-sLe" customClass="PhataTableViewCell" customModule="xtiva" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="55.5" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4B0-o6-sLe" id="bsg-xy-DbF">
@@ -5955,7 +5980,7 @@
         <image name="Add Photo" width="67" height="57"/>
         <image name="Add photo" width="100" height="100"/>
         <image name="ArrowBar" width="375" height="123"/>
-        <image name="Background-Land" width="570" height="325"/>
+        <image name="Background-Land" width="1080" height="1918"/>
         <image name="Calendar" width="25" height="25"/>
         <image name="Cancel" width="25" height="25"/>
         <image name="Cancel Filled" width="25" height="25"/>
@@ -5985,7 +6010,8 @@
         <image name="PII Image" width="40" height="43"/>
         <image name="Profile" width="55" height="55"/>
         <image name="Retry" width="25" height="25"/>
-        <image name="Rumpel" width="76" height="76"/>
+        <image name="Rumpel" width="75" height="75"/>
+        <image name="Rumpel Logo" width="76" height="76"/>
         <image name="Settings" width="25" height="25"/>
         <image name="SocialFeed" width="102" height="81"/>
         <image name="Twitter" width="76" height="76"/>
@@ -5994,8 +6020,8 @@
     <inferredMetricsTieBreakers>
         <segue reference="dAR-WR-vXs"/>
         <segue reference="cWt-PU-EXW"/>
-        <segue reference="v2J-fU-LlK"/>
-        <segue reference="EF9-6L-lvf"/>
+        <segue reference="4Pu-pQ-HhU"/>
+        <segue reference="ohN-KF-ATS"/>
         <segue reference="bLw-tk-kFC"/>
     </inferredMetricsTieBreakers>
 </document>

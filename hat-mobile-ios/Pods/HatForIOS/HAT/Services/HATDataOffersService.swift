@@ -109,6 +109,13 @@ public class HATDataOffersService: NSObject {
     
     // MARK: - Redeem offer
     
+    /**
+     Redeems cash offer
+     
+     - parameter appToken: The databuyer app token
+     - parameter succesfulCallBack: A function to execute on successful response returning the server message and the renewed user's token
+     - parameter failCallBack: A function to execute on failed response returning the error
+     */
     public class func redeemOffer(appToken: String, succesfulCallBack: @escaping (String, String?) -> Void, failCallBack: @escaping (DataPlugError) -> Void) {
         
         let url = "https://databuyer.hubat.net/api/v1/user/redeem/cash"
