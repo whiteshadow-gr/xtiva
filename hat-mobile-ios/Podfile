@@ -4,7 +4,7 @@ inhibit_all_warnings!
 # Uncomment this line if you're using Swift
 use_frameworks!
 
-target 'hat-mobile-ios' do
+target 'xtiva' do
     pod 'Alamofire'
     pod 'RealmSwift'
     pod 'SwiftyJSON'
@@ -19,11 +19,11 @@ target 'hat-mobile-ios' do
     pod 'zxcvbn-ios'
     pod 'HatForIOS', :git => 'https://github.com/whiteshadow-gr/HatForIOS.git'
     pod 'SwiftLint'
-    
+
 end
 
-target 'hat-mobile-iosTests' do
-    
+target 'xtivaTests' do
+
     inherit! :complete
     pod 'Alamofire'
     pod 'RealmSwift'
@@ -40,7 +40,7 @@ target 'hat-mobile-iosTests' do
     pod 'Mockingjay'
 end
 
-target 'hat-mobile-iosUITests' do
+target 'xtivaUITests' do
 
 end
 

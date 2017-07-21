@@ -1,0 +1,6 @@
+framework module Pods_xtiva {
+  umbrella header "Pods-xtiva-umbrella.h"
+
+  export *
+  module * { export * }
+}

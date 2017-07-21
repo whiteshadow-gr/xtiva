@@ -2,10 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:mapstogpx20170220_154311.gpx">
-   </FileRef>
-   <FileRef
-      location = "group:hat-mobile-ios.xcodeproj">
+      location = "group:xtiva.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

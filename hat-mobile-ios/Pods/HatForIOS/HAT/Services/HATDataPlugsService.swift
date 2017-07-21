@@ -327,55 +327,5 @@ public class HATDataPlugsService: NSObject {
             })
         }
     }
-    
-    /**
-     Check social plug expiry date
-     
-     - parameter succesfulCallBack: A function to call if everything is ok
-     - parameter failCallBack: A function to call if fail
-     */
-    public class func checkSocialPlugExpiry(succesfulCallBack: @escaping (String) -> Void, failCallBack: @escaping (DataPlugError) -> Void) -> (_ appToken: String) -> Void {
-        
-        return { (appToken: String) in
-            
-            // setup parameters and headers
-            let parameters: Dictionary<String, String> = [:]
-            let headers = ["X-Auth-Token": appToken]
-            
-            // contruct the url
-            let url = "https://social-plug.hubofallthings.com/api/user/token/status"
-            
-            // make async request
-            HATNetworkHelper.asynchronousRequest(url, method: .get, encoding: Alamofire.URLEncoding.default, contentType: ContentType.JSON, parameters: parameters, headers: headers, completion: { (response: HATNetworkHelper.ResultType) -> Void in
-                
-                switch response {
-                    
-                // in case of error call the failCallBack
-                case .error(let error, let statusCode):
-                    
-                    if statusCode == 404 {
-                        
-                        let message = NSLocalizedString("Expected response, 404", comment: "")
-                        failCallBack(.generalError(message, statusCode, error))
-                    } else {
-                        
-                        let message = NSLocalizedString("Server responded with error", comment: "")
-                        failCallBack(.generalError(message, statusCode, error))
-                    }
-                // in case of success call succesfulCallBack
-                case .isSuccess(let isSuccess, let statusCode, let result, _):
-                    
-                    if isSuccess {
-                        
-                        succesfulCallBack(String(result["expires"].stringValue))
-                    } else {
-                        
-                        let message = NSLocalizedString("Server response was unexpected", comment: "")
-                        failCallBack(.generalError(message, statusCode, nil))
-                    }
-                }
-            })
-        }
-    }
 
 }

@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_hat_mobile_iosVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_hat_mobile_iosVersionString[];
+FOUNDATION_EXPORT double Pods_xtivaVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_xtivaVersionString[];
 

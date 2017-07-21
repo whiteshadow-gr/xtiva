@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D5637F6A801923583665846 /* Pods_hat_mobile_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77786464C54765E0CEAD1CF0 /* Pods_hat_mobile_iosTests.framework */; };
+		3E90983C688587B70EAD5D25 /* Pods_xtiva.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F9CC74AD40CECCDFE6F02A8 /* Pods_xtiva.framework */; };
+		4230A1727D5E4D5DB0DFF939 /* Pods_xtivaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90168D16041EE48019D98139 /* Pods_xtivaTests.framework */; };
 		600015541EAE62AE000A084F /* ResetPasswordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600015531EAE62AE000A084F /* ResetPasswordTableViewController.swift */; };
 		600015561EAE63CD000A084F /* ResetPasswordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600015551EAE63CD000A084F /* ResetPasswordTableViewCell.swift */; };
 		6000CE5D1DE728580076E173 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6000CE531DE728580076E173 /* OpenSans-Bold.ttf */; };
@@ -145,7 +146,6 @@
 		60F1D7E71E6828DA0009CF1F /* AuthenticationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F1D7E61E6828DA0009CF1F /* AuthenticationHelper.swift */; };
 		60FAC7691E223A1D00532C01 /* DataPlugsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FAC7681E223A1D00532C01 /* DataPlugsCollectionViewController.swift */; };
 		60FAC76B1E223AA700532C01 /* DataPlugCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FAC76A1E223AA700532C01 /* DataPlugCollectionViewCell.swift */; };
-		80ECC806CA622621992D8329 /* Pods_hat_mobile_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38701F920BAE76DFF5463629 /* Pods_hat_mobile_ios.framework */; };
 		B5138ACE1D1ECA2C00CD1530 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5138ACD1D1ECA2C00CD1530 /* NetworkHelper.swift */; };
 		B51CC9241D1D5749000C9E48 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51CC9231D1D5749000C9E48 /* SettingsViewController.swift */; };
 		B51CC9261D1D620C000C9E48 /* MapSettingsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51CC9251D1D620C000C9E48 /* MapSettingsDelegate.swift */; };
@@ -165,7 +165,7 @@
 		B59136881D19DC2700E9EDD0 /* DataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59136871D19DC2700E9EDD0 /* DataPoint.swift */; };
 		B591368A1D19DE6C00E9EDD0 /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59136891D19DE6C00E9EDD0 /* RealmHelper.swift */; };
 		B591368C1D19F13500E9EDD0 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B591368B1D19F13500E9EDD0 /* DataViewController.swift */; };
-		C9A7EBA6C445F9F68C86728A /* Pods_hat_mobile_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2632FB8B2553DD802A1D8E0E /* Pods_hat_mobile_iosUITests.framework */; };
+		E73048B8833A512DFA4E2397 /* Pods_xtivaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AD7BD94208D66AE0C6E867 /* Pods_xtivaUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -186,13 +186,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0AF64C75F28A29BAC48C6881 /* Pods-hat-mobile-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hat-mobile-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-hat-mobile-ios/Pods-hat-mobile-ios.release.xcconfig"; sourceTree = "<group>"; };
-		158113EFCF5B64B67322CA7A /* Pods-hat-mobile-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hat-mobile-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hat-mobile-ios/Pods-hat-mobile-ios.debug.xcconfig"; sourceTree = "<group>"; };
-		2632FB8B2553DD802A1D8E0E /* Pods_hat_mobile_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hat_mobile_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		28C6670E861A21AA5FCE1C0F /* Pods-hat-mobile-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hat-mobile-iosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hat-mobile-iosTests/Pods-hat-mobile-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
-		38701F920BAE76DFF5463629 /* Pods_hat_mobile_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hat_mobile_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B2D42BB42DCB166E7846D00 /* Pods-hat-mobile-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hat-mobile-iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-hat-mobile-iosTests/Pods-hat-mobile-iosTests.release.xcconfig"; sourceTree = "<group>"; };
-		58252B1549E6585555A90CEC /* Pods-hat-mobile-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hat-mobile-iosUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hat-mobile-iosUITests/Pods-hat-mobile-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0C451CB083372401BE862E9E /* Pods-xtivaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xtivaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-xtivaTests/Pods-xtivaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0F9CC74AD40CECCDFE6F02A8 /* Pods_xtiva.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xtiva.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58177C9BE5CE9A4ED572D06B /* Pods-xtivaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xtivaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-xtivaUITests/Pods-xtivaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5B2610291520B2DE01F62365 /* Pods-xtiva.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xtiva.debug.xcconfig"; path = "Pods/Target Support Files/Pods-xtiva/Pods-xtiva.debug.xcconfig"; sourceTree = "<group>"; };
+		5B3ADD2DE3D1502750E7500E /* Pods-xtivaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xtivaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-xtivaTests/Pods-xtivaTests.release.xcconfig"; sourceTree = "<group>"; };
 		600015531EAE62AE000A084F /* ResetPasswordTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordTableViewController.swift; sourceTree = "<group>"; };
 		600015551EAE63CD000A084F /* ResetPasswordTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordTableViewCell.swift; sourceTree = "<group>"; };
 		6000CE531DE728580076E173 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
@@ -322,20 +320,20 @@
 		60F1D7E61E6828DA0009CF1F /* AuthenticationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationHelper.swift; sourceTree = "<group>"; };
 		60FAC7681E223A1D00532C01 /* DataPlugsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPlugsCollectionViewController.swift; sourceTree = "<group>"; };
 		60FAC76A1E223AA700532C01 /* DataPlugCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPlugCollectionViewCell.swift; sourceTree = "<group>"; };
-		77786464C54765E0CEAD1CF0 /* Pods_hat_mobile_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hat_mobile_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		821CBD00C6F813421F149C7E /* Pods-hat-mobile-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hat-mobile-iosUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-hat-mobile-iosUITests/Pods-hat-mobile-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		90168D16041EE48019D98139 /* Pods_xtivaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xtivaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE8F4D5E01E2C825AD6681CA /* Pods-xtivaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xtivaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-xtivaUITests/Pods-xtivaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B5138ACD1D1ECA2C00CD1530 /* NetworkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 		B51CC9231D1D5749000C9E48 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		B51CC9251D1D620C000C9E48 /* MapSettingsDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapSettingsDelegate.swift; sourceTree = "<group>"; };
 		B51CC9271D1D7895000C9E48 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B54EA6171D19F2750018EE47 /* DataPointsTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPointsTableView.swift; sourceTree = "<group>"; };
 		B54EA6191D19F5450018EE47 /* DataPointTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPointTableViewCell.swift; sourceTree = "<group>"; };
-		B564E9651D19717900EDB8F1 /* hat-mobile-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hat-mobile-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B564E9651D19717900EDB8F1 /* xtiva.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xtiva.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B564E96D1D19717900EDB8F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B564E9791D19717900EDB8F1 /* hat-mobile-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "hat-mobile-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B564E9791D19717900EDB8F1 /* xtivaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xtivaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B564E97D1D19717900EDB8F1 /* DataPlugCollectionViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPlugCollectionViewCellTests.swift; sourceTree = "<group>"; };
 		B564E97F1D19717900EDB8F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B564E9841D19717900EDB8F1 /* hat-mobile-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "hat-mobile-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B564E9841D19717900EDB8F1 /* xtivaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xtivaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B564E9881D19717900EDB8F1 /* hat_mobile_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hat_mobile_iosUITests.swift; sourceTree = "<group>"; };
 		B564E98A1D19717900EDB8F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B564E9961D1984CF00EDB8F1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -348,6 +346,8 @@
 		B59136871D19DC2700E9EDD0 /* DataPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPoint.swift; sourceTree = "<group>"; };
 		B59136891D19DE6C00E9EDD0 /* RealmHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
 		B591368B1D19F13500E9EDD0 /* DataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		BB3F87475DB88D54E00489B7 /* Pods-xtiva.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xtiva.release.xcconfig"; path = "Pods/Target Support Files/Pods-xtiva/Pods-xtiva.release.xcconfig"; sourceTree = "<group>"; };
+		D2AD7BD94208D66AE0C6E867 /* Pods_xtivaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xtivaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -356,7 +356,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B564E9971D1984CF00EDB8F1 /* MapKit.framework in Frameworks */,
-				80ECC806CA622621992D8329 /* Pods_hat_mobile_ios.framework in Frameworks */,
+				3E90983C688587B70EAD5D25 /* Pods_xtiva.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,7 +364,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D5637F6A801923583665846 /* Pods_hat_mobile_iosTests.framework in Frameworks */,
+				4230A1727D5E4D5DB0DFF939 /* Pods_xtivaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,7 +372,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9A7EBA6C445F9F68C86728A /* Pods_hat_mobile_iosUITests.framework in Frameworks */,
+				E73048B8833A512DFA4E2397 /* Pods_xtivaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,11 +384,24 @@
 			children = (
 				60CD68431E47C71300E60429 /* SwiftyJSON.framework */,
 				B564E9961D1984CF00EDB8F1 /* MapKit.framework */,
-				38701F920BAE76DFF5463629 /* Pods_hat_mobile_ios.framework */,
-				77786464C54765E0CEAD1CF0 /* Pods_hat_mobile_iosTests.framework */,
-				2632FB8B2553DD802A1D8E0E /* Pods_hat_mobile_iosUITests.framework */,
+				0F9CC74AD40CECCDFE6F02A8 /* Pods_xtiva.framework */,
+				90168D16041EE48019D98139 /* Pods_xtivaTests.framework */,
+				D2AD7BD94208D66AE0C6E867 /* Pods_xtivaUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4D5CE6910A15F1995530E36A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5B2610291520B2DE01F62365 /* Pods-xtiva.debug.xcconfig */,
+				BB3F87475DB88D54E00489B7 /* Pods-xtiva.release.xcconfig */,
+				0C451CB083372401BE862E9E /* Pods-xtivaTests.debug.xcconfig */,
+				5B3ADD2DE3D1502750E7500E /* Pods-xtivaTests.release.xcconfig */,
+				AE8F4D5E01E2C825AD6681CA /* Pods-xtivaUITests.debug.xcconfig */,
+				58177C9BE5CE9A4ED572D06B /* Pods-xtivaUITests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		6000CE521DE7282D0076E173 /* Fonts */ = {
@@ -680,7 +693,6 @@
 			children = (
 				6097C0631E3273AA000E771A /* Assets */,
 				08D0D14BBCEF6FAAACE465BA /* Frameworks */,
-				DF4840D84E14BC3A54966F28 /* Pods */,
 				B564E9661D19717900EDB8F1 /* Products */,
 				B564E9671D19717900EDB8F1 /* hat-mobile-ios */,
 				B564E97C1D19717900EDB8F1 /* hat-mobile-iosTests */,
@@ -690,15 +702,16 @@
 				6041B2031E49CECA00534955 /* Launch Screen2.storyboard */,
 				B564E9981D19862200EDB8F1 /* Localizable.strings */,
 				B564E96C1D19717900EDB8F1 /* Main.storyboard */,
+				4D5CE6910A15F1995530E36A /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
 		B564E9661D19717900EDB8F1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B564E9651D19717900EDB8F1 /* hat-mobile-ios.app */,
-				B564E9791D19717900EDB8F1 /* hat-mobile-iosTests.xctest */,
-				B564E9841D19717900EDB8F1 /* hat-mobile-iosUITests.xctest */,
+				B564E9651D19717900EDB8F1 /* xtiva.app */,
+				B564E9791D19717900EDB8F1 /* xtivaTests.xctest */,
+				B564E9841D19717900EDB8F1 /* xtivaUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -806,84 +819,71 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
-		DF4840D84E14BC3A54966F28 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				158113EFCF5B64B67322CA7A /* Pods-hat-mobile-ios.debug.xcconfig */,
-				0AF64C75F28A29BAC48C6881 /* Pods-hat-mobile-ios.release.xcconfig */,
-				28C6670E861A21AA5FCE1C0F /* Pods-hat-mobile-iosTests.debug.xcconfig */,
-				4B2D42BB42DCB166E7846D00 /* Pods-hat-mobile-iosTests.release.xcconfig */,
-				58252B1549E6585555A90CEC /* Pods-hat-mobile-iosUITests.debug.xcconfig */,
-				821CBD00C6F813421F149C7E /* Pods-hat-mobile-iosUITests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B564E9641D19717900EDB8F1 /* hat-mobile-ios */ = {
+		B564E9641D19717900EDB8F1 /* xtiva */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B564E98D1D19717900EDB8F1 /* Build configuration list for PBXNativeTarget "hat-mobile-ios" */;
+			buildConfigurationList = B564E98D1D19717900EDB8F1 /* Build configuration list for PBXNativeTarget "xtiva" */;
 			buildPhases = (
-				AC9A4B5A5005F2159FF38388 /* [CP] Check Pods Manifest.lock */,
+				15DB81D5F0A6D0D72C9EE18E /* [CP] Check Pods Manifest.lock */,
 				B564E9611D19717900EDB8F1 /* Sources */,
 				B564E9621D19717900EDB8F1 /* Frameworks */,
 				B564E9631D19717900EDB8F1 /* Resources */,
 				6076A5971DEFACA700D83D42 /* ShellScript */,
-				4E1B908D4617D7C03004F3E7 /* [CP] Embed Pods Frameworks */,
-				BE9985A57514D67E05B3091A /* [CP] Copy Pods Resources */,
 				604E45FE1EFBD4CC0071347E /* ShellScript */,
+				0DD2D06F5126FBE1F5ABF8E7 /* [CP] Embed Pods Frameworks */,
+				6686DB15CF71101C7093EDE8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "hat-mobile-ios";
+			name = xtiva;
 			productName = "hat-mobile-ios";
-			productReference = B564E9651D19717900EDB8F1 /* hat-mobile-ios.app */;
+			productReference = B564E9651D19717900EDB8F1 /* xtiva.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B564E9781D19717900EDB8F1 /* hat-mobile-iosTests */ = {
+		B564E9781D19717900EDB8F1 /* xtivaTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B564E9901D19717900EDB8F1 /* Build configuration list for PBXNativeTarget "hat-mobile-iosTests" */;
+			buildConfigurationList = B564E9901D19717900EDB8F1 /* Build configuration list for PBXNativeTarget "xtivaTests" */;
 			buildPhases = (
-				4AFE367BDC8E7CB1B4B74AEB /* [CP] Check Pods Manifest.lock */,
+				9BEC046D2C318A3632B646C9 /* [CP] Check Pods Manifest.lock */,
 				B564E9751D19717900EDB8F1 /* Sources */,
 				B564E9761D19717900EDB8F1 /* Frameworks */,
 				B564E9771D19717900EDB8F1 /* Resources */,
-				4558951E55EC13DFDA91F601 /* [CP] Embed Pods Frameworks */,
-				08B770A650AD1E61875F466F /* [CP] Copy Pods Resources */,
+				FA3691358FDA360AAF1CC842 /* [CP] Embed Pods Frameworks */,
+				6092108296A8727C1374804F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				B564E97B1D19717900EDB8F1 /* PBXTargetDependency */,
 			);
-			name = "hat-mobile-iosTests";
+			name = xtivaTests;
 			productName = "hat-mobile-iosTests";
-			productReference = B564E9791D19717900EDB8F1 /* hat-mobile-iosTests.xctest */;
+			productReference = B564E9791D19717900EDB8F1 /* xtivaTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		B564E9831D19717900EDB8F1 /* hat-mobile-iosUITests */ = {
+		B564E9831D19717900EDB8F1 /* xtivaUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B564E9931D19717900EDB8F1 /* Build configuration list for PBXNativeTarget "hat-mobile-iosUITests" */;
+			buildConfigurationList = B564E9931D19717900EDB8F1 /* Build configuration list for PBXNativeTarget "xtivaUITests" */;
 			buildPhases = (
-				B7A88E34CFB8B0481FD46E0D /* [CP] Check Pods Manifest.lock */,
+				BC0034004306E902C895F538 /* [CP] Check Pods Manifest.lock */,
 				B564E9801D19717900EDB8F1 /* Sources */,
 				B564E9811D19717900EDB8F1 /* Frameworks */,
 				B564E9821D19717900EDB8F1 /* Resources */,
-				2751C775C9807AEFFE85B3AE /* [CP] Embed Pods Frameworks */,
-				A3C2EE3D004F8531DF341A6F /* [CP] Copy Pods Resources */,
+				0CB9054F334F11F33689B009 /* [CP] Embed Pods Frameworks */,
+				1DB20EE99C7EB3377EA8DB60 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				B564E9861D19717900EDB8F1 /* PBXTargetDependency */,
 			);
-			name = "hat-mobile-iosUITests";
+			name = xtivaUITests;
 			productName = "hat-mobile-iosUITests";
-			productReference = B564E9841D19717900EDB8F1 /* hat-mobile-iosUITests.xctest */;
+			productReference = B564E9841D19717900EDB8F1 /* xtivaUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -934,7 +934,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B564E9601D19717900EDB8F1 /* Build configuration list for PBXProject "hat-mobile-ios" */;
+			buildConfigurationList = B564E9601D19717900EDB8F1 /* Build configuration list for PBXProject "xtiva" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -947,9 +947,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B564E9641D19717900EDB8F1 /* hat-mobile-ios */,
-				B564E9781D19717900EDB8F1 /* hat-mobile-iosTests */,
-				B564E9831D19717900EDB8F1 /* hat-mobile-iosUITests */,
+				B564E9641D19717900EDB8F1 /* xtiva */,
+				B564E9781D19717900EDB8F1 /* xtivaTests */,
+				B564E9831D19717900EDB8F1 /* xtivaUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -1004,22 +1004,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		08B770A650AD1E61875F466F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hat-mobile-iosTests/Pods-hat-mobile-iosTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2751C775C9807AEFFE85B3AE /* [CP] Embed Pods Frameworks */ = {
+		0CB9054F334F11F33689B009 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1031,16 +1016,181 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hat-mobile-iosUITests/Pods-hat-mobile-iosUITests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-xtivaUITests/Pods-xtivaUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4558951E55EC13DFDA91F601 /* [CP] Embed Pods Frameworks */ = {
+		0DD2D06F5126FBE1F5ABF8E7 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-hat-mobile-iosTests/Pods-hat-mobile-iosTests-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-xtiva/Pods-xtiva-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/BEMCheckBox/BEMCheckBox.framework",
+				"${BUILT_PRODUCTS_DIR}/FBAnnotationClusteringSwift/FBAnnotationClusteringSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/HatForIOS/HatForIOS.framework",
+				"${BUILT_PRODUCTS_DIR}/JWTDecode/JWTDecode.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainSwift/KeychainSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyRSA/SwiftyRSA.framework",
+				"${BUILT_PRODUCTS_DIR}/Toaster/Toaster.framework",
+				"${BUILT_PRODUCTS_DIR}/zxcvbn-ios/zxcvbn_ios.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BEMCheckBox.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBAnnotationClusteringSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HatForIOS.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JWTDecode.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyRSA.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toaster.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/zxcvbn_ios.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-xtiva/Pods-xtiva-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		15DB81D5F0A6D0D72C9EE18E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-xtiva-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1DB20EE99C7EB3377EA8DB60 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-xtivaUITests/Pods-xtivaUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		604E45FE1EFBD4CC0071347E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
+		};
+		6076A5971DEFACA700D83D42 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 4398fa4a59c4ae9f4c3465ae15d65aa0bdd7810a 2c7e49e6d9a87b931db2642312ca7b43b36eaee03e5ace21b6a3a9785d2c02c3";
+		};
+		6092108296A8727C1374804F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-xtivaTests/Pods-xtivaTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6686DB15CF71101C7093EDE8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-xtiva/Pods-xtiva-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BEC046D2C318A3632B646C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-xtivaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC0034004306E902C895F538 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-xtivaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA3691358FDA360AAF1CC842 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-xtivaTests/Pods-xtivaTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/BEMCheckBox/BEMCheckBox.framework",
 				"${BUILT_PRODUCTS_DIR}/FBAnnotationClusteringSwift/FBAnnotationClusteringSwift.framework",
@@ -1073,157 +1223,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hat-mobile-iosTests/Pods-hat-mobile-iosTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4AFE367BDC8E7CB1B4B74AEB /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-hat-mobile-iosTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4E1B908D4617D7C03004F3E7 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-hat-mobile-ios/Pods-hat-mobile-ios-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/BEMCheckBox/BEMCheckBox.framework",
-				"${BUILT_PRODUCTS_DIR}/FBAnnotationClusteringSwift/FBAnnotationClusteringSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/HatForIOS/HatForIOS.framework",
-				"${BUILT_PRODUCTS_DIR}/JWTDecode/JWTDecode.framework",
-				"${BUILT_PRODUCTS_DIR}/KeychainSwift/KeychainSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyRSA/SwiftyRSA.framework",
-				"${BUILT_PRODUCTS_DIR}/Toaster/Toaster.framework",
-				"${BUILT_PRODUCTS_DIR}/zxcvbn-ios/zxcvbn_ios.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BEMCheckBox.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBAnnotationClusteringSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HatForIOS.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JWTDecode.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyRSA.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toaster.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/zxcvbn_ios.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hat-mobile-ios/Pods-hat-mobile-ios-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		604E45FE1EFBD4CC0071347E /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
-		};
-		6076A5971DEFACA700D83D42 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Fabric/run\" 4398fa4a59c4ae9f4c3465ae15d65aa0bdd7810a 2c7e49e6d9a87b931db2642312ca7b43b36eaee03e5ace21b6a3a9785d2c02c3";
-		};
-		A3C2EE3D004F8531DF341A6F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hat-mobile-iosUITests/Pods-hat-mobile-iosUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AC9A4B5A5005F2159FF38388 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-hat-mobile-ios-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B7A88E34CFB8B0481FD46E0D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-hat-mobile-iosUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BE9985A57514D67E05B3091A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hat-mobile-ios/Pods-hat-mobile-ios-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-xtivaTests/Pods-xtivaTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1385,12 +1385,12 @@
 /* Begin PBXTargetDependency section */
 		B564E97B1D19717900EDB8F1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B564E9641D19717900EDB8F1 /* hat-mobile-ios */;
+			target = B564E9641D19717900EDB8F1 /* xtiva */;
 			targetProxy = B564E97A1D19717900EDB8F1 /* PBXContainerItemProxy */;
 		};
 		B564E9861D19717900EDB8F1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B564E9641D19717900EDB8F1 /* hat-mobile-ios */;
+			target = B564E9641D19717900EDB8F1 /* xtiva */;
 			targetProxy = B564E9851D19717900EDB8F1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1503,7 +1503,7 @@
 		};
 		B564E98E1D19717900EDB8F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 158113EFCF5B64B67322CA7A /* Pods-hat-mobile-ios.debug.xcconfig */;
+			baseConfigurationReference = 5B2610291520B2DE01F62365 /* Pods-xtiva.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1515,7 +1515,7 @@
 				INFOPLIST_FILE = "hat-mobile-ios/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hubofallthings.rumpellocationtracker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hubofallthings.xtiva;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1527,7 +1527,7 @@
 		};
 		B564E98F1D19717900EDB8F1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0AF64C75F28A29BAC48C6881 /* Pods-hat-mobile-ios.release.xcconfig */;
+			baseConfigurationReference = BB3F87475DB88D54E00489B7 /* Pods-xtiva.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1538,7 +1538,7 @@
 				INFOPLIST_FILE = "hat-mobile-ios/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hubofallthings.rumpellocationtracker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hubofallthings.xtiva;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1550,7 +1550,7 @@
 		};
 		B564E9911D19717900EDB8F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 28C6670E861A21AA5FCE1C0F /* Pods-hat-mobile-iosTests.debug.xcconfig */;
+			baseConfigurationReference = 0C451CB083372401BE862E9E /* Pods-xtivaTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1567,14 +1567,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "hat-mobile-ios/HatMobile-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hat-mobile-ios.app/hat-mobile-ios";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/xtiva.app/xtiva";
 				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
 		B564E9921D19717900EDB8F1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B2D42BB42DCB166E7846D00 /* Pods-hat-mobile-iosTests.release.xcconfig */;
+			baseConfigurationReference = 5B3ADD2DE3D1502750E7500E /* Pods-xtivaTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1591,14 +1591,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "hat-mobile-ios/HatMobile-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hat-mobile-ios.app/hat-mobile-ios";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/xtiva.app/xtiva";
 				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Release;
 		};
 		B564E9941D19717900EDB8F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 58252B1549E6585555A90CEC /* Pods-hat-mobile-iosUITests.debug.xcconfig */;
+			baseConfigurationReference = AE8F4D5E01E2C825AD6681CA /* Pods-xtivaUITests.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "hat-mobile-iosUITests/Info.plist";
@@ -1612,7 +1612,7 @@
 		};
 		B564E9951D19717900EDB8F1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 821CBD00C6F813421F149C7E /* Pods-hat-mobile-iosUITests.release.xcconfig */;
+			baseConfigurationReference = 58177C9BE5CE9A4ED572D06B /* Pods-xtivaUITests.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "hat-mobile-iosUITests/Info.plist";
@@ -1627,7 +1627,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B564E9601D19717900EDB8F1 /* Build configuration list for PBXProject "hat-mobile-ios" */ = {
+		B564E9601D19717900EDB8F1 /* Build configuration list for PBXProject "xtiva" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B564E98B1D19717900EDB8F1 /* Debug */,
@@ -1636,7 +1636,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B564E98D1D19717900EDB8F1 /* Build configuration list for PBXNativeTarget "hat-mobile-ios" */ = {
+		B564E98D1D19717900EDB8F1 /* Build configuration list for PBXNativeTarget "xtiva" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B564E98E1D19717900EDB8F1 /* Debug */,
@@ -1645,7 +1645,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B564E9901D19717900EDB8F1 /* Build configuration list for PBXNativeTarget "hat-mobile-iosTests" */ = {
+		B564E9901D19717900EDB8F1 /* Build configuration list for PBXNativeTarget "xtivaTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B564E9911D19717900EDB8F1 /* Debug */,
@@ -1654,7 +1654,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B564E9931D19717900EDB8F1 /* Build configuration list for PBXNativeTarget "hat-mobile-iosUITests" */ = {
+		B564E9931D19717900EDB8F1 /* Build configuration list for PBXNativeTarget "xtivaUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B564E9941D19717900EDB8F1 /* Debug */,
